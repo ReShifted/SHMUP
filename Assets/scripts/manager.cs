@@ -9,7 +9,7 @@ public class manager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-            SpawnEnemy();
+            SpawnEyeEnemy();
     }
 
     // Update is called once per frame
@@ -18,7 +18,7 @@ public class manager : MonoBehaviour
         
     }
     
-    public void SpawnEnemy()
+    public void SpawnEyeEnemy()
     {
         Instantiate(Enemy_Eye, new Vector3(0, 0, 0), Quaternion.identity);
         AllEnemys.Add(Enemy_Eye);
