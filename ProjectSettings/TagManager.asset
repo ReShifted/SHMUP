@@ -3,17 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags: []
+  tags:
+  - EnemyBullet
+  - PARRYIT
+  - Enemy
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - PARRYIT
   - Water
   - UI
   - enemy
-  - enemy bullet
-  - 
+  - EnemyBullet
+  - PlayerBullet
   - 
   - 
   - 

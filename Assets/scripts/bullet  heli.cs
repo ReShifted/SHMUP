@@ -25,4 +25,11 @@ public class bulletheli : MonoBehaviour
     {
         
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("PARRYIT"))
+        {
+            rb.linearVelocity = -rb.linearVelocity;
+        }
+    }
 }
