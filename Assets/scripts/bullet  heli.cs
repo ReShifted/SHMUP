@@ -3,6 +3,7 @@ using UnityEngine.UIElements;
 
 public class bulletheli : MonoBehaviour
 {
+    public TimeManager Timemanager;
     private float angle;
     private float spread;
     private Quaternion bulletRotation;
@@ -17,6 +18,9 @@ public class bulletheli : MonoBehaviour
 
         transform.rotation = bulletRotation;
         rb.linearVelocity = bulletRotation * Vector3.forward;
+
+       // Timemanager = FindFirstObjectByType<manager>();
+       Timemanager = FindAnyObjectByType<TimeManager>(); 
     }
 
     // Update is called once per frame
@@ -28,7 +32,13 @@ public class bulletheli : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PARRYIT"))
         {
-            rb.linearVelocity = -rb.linearVelocity;
+            for (int i = 0; i < 5; i++)
+            {
+                rb.linearVelocity = -rb.linearVelocity;
+                //Timemanager DoSlowmotion();
+                Timemanager.DoSlowmotion();
+            }
+            
         } 
     }
 }

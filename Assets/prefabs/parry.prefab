@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7564025028781752512}
   - component: {fileID: 80364892547335114}
   - component: {fileID: 495812931831635552}
+  - component: {fileID: -9022979205801188833}
   m_Layer: 3
   m_Name: parry
   m_TagString: PARRYIT
@@ -112,3 +113,15 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-9022979205801188833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7463858230536549969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cbcec82d2448c446a8a4400ca58c503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PARRY_IT

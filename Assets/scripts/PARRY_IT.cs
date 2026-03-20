@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PARRY_IT : MonoBehaviour
 {
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,18 +12,16 @@ public class PARRY_IT : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("PlayerBullet")|| collision.gameObject.CompareTag("EnemyBullet"))
         {
-           Time.timeScale = 0.2f;
-            while (Time.timeScale !=1f)
-            {
-                Time.timeScale += 0.01f;
-            }
+
         }
     }
+
+
 
 }

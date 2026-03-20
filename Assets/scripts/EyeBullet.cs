@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class EyeBullet : MonoBehaviour
 {
+    public TimeManager Timemanager;
     private Rigidbody rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-
+        Timemanager = FindAnyObjectByType<TimeManager>();
         rb.linearVelocity = Vector3.forward;
     }
 
@@ -21,6 +22,8 @@ public class EyeBullet : MonoBehaviour
         if (collision.gameObject.CompareTag("PARRYIT"))
         {
             rb.linearVelocity = -rb.linearVelocity;
+
+            Timemanager.DoSlowmotion();
         }
     }
     
