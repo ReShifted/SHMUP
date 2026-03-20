@@ -3,7 +3,7 @@ using UnityEngine;
 public class eye : MonoBehaviour
 {
     private Rigidbody Eyerb;
-    public Rigidbody Eyeprojectile;
+    public GameObject Eyeprojectile;
     private float EyelastFireTime = -2f;
     private float EyefireCooldown = 2f;
     private float health = 100f;
@@ -20,10 +20,7 @@ public class eye : MonoBehaviour
         if (Time.time >= EyelastFireTime + EyefireCooldown)
         {
             EyelastFireTime = Time.time;
-
-            Rigidbody clone = Instantiate(Eyeprojectile, transform.position, transform.rotation);
-            clone.linearVelocity = transform.TransformDirection(Vector3.forward * 20);
-            Destroy(clone.gameObject, 5.0f);
+            Instantiate(Eyeprojectile,transform.position,transform.rotation);
         }
     }
     private void OnCollisionEnter(Collision collision)

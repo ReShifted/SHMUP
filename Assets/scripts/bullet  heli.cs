@@ -17,7 +17,6 @@ public class bulletheli : MonoBehaviour
 
         transform.rotation = bulletRotation;
         rb.linearVelocity = bulletRotation * Vector3.forward;
-
     }
 
     // Update is called once per frame
@@ -30,6 +29,7 @@ public class bulletheli : MonoBehaviour
         if (collision.gameObject.CompareTag("PARRYIT"))
         {
             rb.linearVelocity = -rb.linearVelocity;
-        }
+        } 
     }
 }
+

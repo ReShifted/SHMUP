@@ -16,15 +16,14 @@ public class PARRY_IT : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("EnemyBullet"))
+        if (collision.gameObject.CompareTag("PlayerBullet")|| collision.gameObject.CompareTag("EnemyBullet"))
         {
-            // Get the Rigidbody component of the bullet
-            Rigidbody bulletRb = collision.gameObject.GetComponent<Rigidbody>();
-            // Reverse the velocity of the bullet to parry it back
-            if (bulletRb != null)
+           Time.timeScale = 0.2f;
+            while (Time.timeScale !=1f)
             {
-                bulletRb.linearVelocity = -bulletRb.linearVelocity;
+                Time.timeScale += 0.01f;
             }
         }
     }
+
 }

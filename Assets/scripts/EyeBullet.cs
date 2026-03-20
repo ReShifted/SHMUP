@@ -7,6 +7,8 @@ public class EyeBullet : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        rb.linearVelocity = Vector3.forward;
     }
 
     // Update is called once per frame
@@ -18,7 +20,7 @@ public class EyeBullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("PARRYIT"))
         {
-            rb.linearVelocity = -rb.linearVelocity*2;
+            rb.linearVelocity = -rb.linearVelocity;
         }
     }
     

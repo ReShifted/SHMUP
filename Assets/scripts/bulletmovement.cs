@@ -12,4 +12,11 @@ public class bulletmovement : MonoBehaviour
         //destroys the bullet after 3 seconds
         Destroy (gameObject, 3f);
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("PARRYIT"))
+        {
+            speed = speed+5;
+        }
+    }
 }
