@@ -6,6 +6,7 @@ public class eye : MonoBehaviour
     public Rigidbody Eyeprojectile;
     private float EyelastFireTime = -2f;
     private float EyefireCooldown = 2f;
+    private float health = 100f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,4 +26,16 @@ public class eye : MonoBehaviour
             Destroy(clone.gameObject, 5.0f);
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("PlayerBullet"))
+        {
+            health -= 10f;
+            if (health <= 0f)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
 }
+
