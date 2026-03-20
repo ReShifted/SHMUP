@@ -15,13 +15,13 @@ public class EyeBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Destroy(gameObject, 20f);
     }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("PARRYIT"))
         {
-            rb.linearVelocity = -rb.linearVelocity;
+            rb.linearVelocity = -rb.linearVelocity*2;
 
             Timemanager.DoSlowmotion();
         }

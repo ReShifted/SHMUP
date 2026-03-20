@@ -5,6 +5,7 @@ public class playermovement : MonoBehaviour
     public float speed = 25f;
     private Rigidbody rb;
 
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -21,5 +22,6 @@ public class playermovement : MonoBehaviour
                      + transform.right * (inputRightward - inputLeftward);
 
         rb.linearVelocity = move * speed;
+
     }
 }

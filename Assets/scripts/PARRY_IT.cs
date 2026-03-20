@@ -12,15 +12,10 @@ public class PARRY_IT : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Destroy(gameObject,0.2f);
 
     }
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("PlayerBullet")|| collision.gameObject.CompareTag("EnemyBullet"))
-        {
 
-        }
-    }
 
 
 

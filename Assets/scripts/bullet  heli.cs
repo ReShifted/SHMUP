@@ -26,7 +26,7 @@ public class bulletheli : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Destroy(gameObject, 20f);
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -34,7 +34,7 @@ public class bulletheli : MonoBehaviour
         {
             for (int i = 0; i < 5; i++)
             {
-                rb.linearVelocity = -rb.linearVelocity;
+                rb.linearVelocity = -rb.linearVelocity*2;
                 //Timemanager DoSlowmotion();
                 Timemanager.DoSlowmotion();
             }
