@@ -487,6 +487,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5914319665759953528, guid: c1897cfdd9b6de44fa2470ede4468e53, type: 3}
+      propertyPath: m_ExcludeLayers.m_Bits
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 7707839987576129232, guid: c1897cfdd9b6de44fa2470ede4468e53, type: 3}
       propertyPath: m_Name
       value: bomber
