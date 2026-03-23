@@ -46,4 +46,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::manager
   Enemy_Eye: {fileID: 8013031942203143063, guid: 8f0f3bc6ec854c246a17e7135d74fa25, type: 3}
   Enemy_Heli: {fileID: 7420710676839253285, guid: b7ac46019d8377d4bb20fabcfcefffbe, type: 3}
+  Enemy_Bomber: {fileID: 7707839987576129232, guid: c1897cfdd9b6de44fa2470ede4468e53, type: 3}
   AllEnemys: []
