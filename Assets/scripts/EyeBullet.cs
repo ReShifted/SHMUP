@@ -9,7 +9,7 @@ public class EyeBullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Timemanager = FindAnyObjectByType<TimeManager>();
-        rb.linearVelocity = Vector3.forward;
+        rb.linearVelocity = Vector3.left;
     }
 
     // Update is called once per frame
