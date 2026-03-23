@@ -9,7 +9,7 @@ public class EyeBullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Timemanager = FindAnyObjectByType<TimeManager>();
-        rb.linearVelocity = Vector3.forward;
+        rb.linearVelocity = Vector3.left;
     }
 
     // Update is called once per frame
@@ -24,6 +24,10 @@ public class EyeBullet : MonoBehaviour
             rb.linearVelocity = -rb.linearVelocity*2;
 
             Timemanager.DoSlowmotion();
+        }
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
         }
     }
     
