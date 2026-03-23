@@ -32,7 +32,7 @@ public class heli : MonoBehaviour
             for (int i = 0; i < 5; i++)
             {
                 Instantiate(heliprojectilerotation, transform.position, transform.rotation);
-                Destroy(heliprojectilerotation,5.0f);
+               // Destroy(heliprojectilerotation,5.0f);
             }
         }
     }
@@ -43,7 +43,7 @@ public class heli : MonoBehaviour
             health -= 10f;
             if (health <= 0f)
             {
-                Destroy(gameObject);
+                DestroyImmediate(gameObject,true);
             }
         }
     }
