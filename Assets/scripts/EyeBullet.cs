@@ -25,6 +25,10 @@ public class EyeBullet : MonoBehaviour
 
             Timemanager.DoSlowmotion();
         }
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
     }
     
 }
