@@ -157,3 +157,4 @@ MonoBehaviour:
   heliprojectile: {fileID: 6959034058488468496, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
   heliprojectilerotation: {fileID: 5662219992552703168, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
   helifireCooldown: 6
+  targetX: -6
