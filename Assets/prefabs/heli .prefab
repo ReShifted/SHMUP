@@ -139,7 +139,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 120
   m_CollisionDetection: 0
 --- !u!114 &1536413850205675398
 MonoBehaviour:
@@ -153,8 +153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2188dbf107bf141a7bf1f723b254c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::heli
+  moveDuration: 5
   speed: 1
   heliprojectile: {fileID: 6959034058488468496, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
   heliprojectilerotation: {fileID: 5662219992552703168, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
   helifireCooldown: 6
+  health: 100
   targetX: -6
