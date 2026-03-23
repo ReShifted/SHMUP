@@ -1,10 +1,14 @@
-using UnityEngine;
 using System.Collections;
 using System.Linq;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class heli : MonoBehaviour
 {
-
+    [SerializeField] Transform endPoint;
+    [SerializeField] Transform startPoint;
+    [SerializeField] float travelTime;
+    [SerializeField] bool doMovement;
     [Header("Heli stats")]
     //[space]
     private Rigidbody helirb;
@@ -47,4 +51,20 @@ public class heli : MonoBehaviour
             }
         }
     }
+    void TravelFinished()
+    {
+        doMovement = false;
+        Debug.Log("KLAAR!");
+        SceneManager.LoadScene("SampleScene");
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        startPoint = player.gameObject.transform;
+        //endPoint.position = new Vector3(endPoint.position.x, endPoint.position.y, startPoint.position.z);
+        timer = 0f;
+        doMovement = true;
+        rb.linearVelocity = Vector3.zero;
+    }
+}
 }
