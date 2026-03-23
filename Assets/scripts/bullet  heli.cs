@@ -14,13 +14,13 @@ public class bulletheli : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         angle = Mathf.Atan2(0, 20) * Mathf.Rad2Deg;
         spread = Random.Range(-10, 10);
-        bulletRotation = Quaternion.Euler(new Vector3(angle + spread,0,0));
+        bulletRotation = Quaternion.Euler(new Vector3(0,0,angle + spread));
 
         transform.rotation = bulletRotation;
-        rb.linearVelocity = bulletRotation * Vector3.forward;
+        rb.linearVelocity = bulletRotation * Vector3.left;
 
-       // Timemanager = FindFirstObjectByType<manager>();
-       Timemanager = FindAnyObjectByType<TimeManager>(); 
+        // Timemanager = FindFirstObjectByType<manager>();
+        Timemanager = FindAnyObjectByType<TimeManager>();
     }
 
     // Update is called once per frame
@@ -34,12 +34,15 @@ public class bulletheli : MonoBehaviour
         {
             for (int i = 0; i < 5; i++)
             {
-                rb.linearVelocity = -rb.linearVelocity*2;
+                rb.linearVelocity = -rb.linearVelocity * 2;
                 //Timemanager DoSlowmotion();
                 Timemanager.DoSlowmotion();
             }
-            
-        } 
-    }
+
+        } else if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+    } 
 }
 

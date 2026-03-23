@@ -29,13 +29,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7420710676839253285}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -3.5, y: 0, z: -0.22}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!33 &5167995190467450625
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd2188dbf107bf141a7bf1f723b254c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::heli
+  speed: 1
   heliprojectile: {fileID: 6959034058488468496, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
   heliprojectilerotation: {fileID: 5662219992552703168, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
   helifireCooldown: 6

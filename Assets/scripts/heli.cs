@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Linq;
 using UnityEngine;
@@ -5,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class heli : MonoBehaviour
 {
-    [SerializeField] Transform endPoint;
-    [SerializeField] Transform startPoint;
-    [SerializeField] float travelTime;
-    [SerializeField] bool doMovement;
+    float timer = DateTime.Now.Second;
+    float time=5;
+    public float speed = 1f;
+
+
     [Header("Heli stats")]
     //[space]
     private Rigidbody helirb;
@@ -36,8 +38,14 @@ public class heli : MonoBehaviour
             for (int i = 0; i < 5; i++)
             {
                 Instantiate(heliprojectilerotation, transform.position, transform.rotation);
-               // Destroy(heliprojectilerotation,5.0f);
+                // Destroy(heliprojectilerotation,5.0f);
             }
+        } while (timer < 5f)
+        {
+            timer += Time.deltaTime;
+            time = timer / 5f;
+            transform.position = Vector3.Lerp(transform.position, new Vector3(0.3f, 0, 0), time);
+
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -51,20 +59,4 @@ public class heli : MonoBehaviour
             }
         }
     }
-    void TravelFinished()
-    {
-        doMovement = false;
-        Debug.Log("KLAAR!");
-        SceneManager.LoadScene("SampleScene");
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        startPoint = player.gameObject.transform;
-        //endPoint.position = new Vector3(endPoint.position.x, endPoint.position.y, startPoint.position.z);
-        timer = 0f;
-        doMovement = true;
-        rb.linearVelocity = Vector3.zero;
-    }
-}
-}
+ }
