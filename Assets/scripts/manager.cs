@@ -5,6 +5,7 @@ public class manager : MonoBehaviour
 {
     public GameObject Enemy_Eye;
     public GameObject Enemy_Heli;
+    public GameObject Enemy_Bomber;
     [SerializeField] private List<GameObject> AllEnemys = new List<GameObject>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -12,6 +13,7 @@ public class manager : MonoBehaviour
     {
         SpawnEyeEnemy();
         SpawnHeliEnemy();
+        SpawnBomberEnemy();
     }
 
     // Update is called once per frame
@@ -29,5 +31,10 @@ public class manager : MonoBehaviour
     {
         Instantiate(Enemy_Heli, new Vector3(0, 0, 0), Quaternion.identity);
         AllEnemys.Add(Enemy_Heli);
+    }
+    public void SpawnBomberEnemy()
+    {
+        Instantiate(Enemy_Bomber, new Vector3(0, 0, 0), Quaternion.identity);
+        AllEnemys.Add(Enemy_Bomber);
     }
 }

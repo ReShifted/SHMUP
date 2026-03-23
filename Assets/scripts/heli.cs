@@ -22,7 +22,7 @@ public class heli : MonoBehaviour
     [Tooltip("This var changes the fire cooldown of the heli")]
     public float helifireCooldown = 2f;
 
-    private float health= 100f;
+    public float health= 100f;
 
     // start and target x positions
     private float startX;
@@ -69,7 +69,7 @@ public class heli : MonoBehaviour
             health -= 10f;
             if (health <= 0f)
             {
-                DestroyImmediate(gameObject,true);
+                Destroy(gameObject);
             }
         }
     }
