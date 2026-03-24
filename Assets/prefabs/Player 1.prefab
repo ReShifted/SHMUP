@@ -89,6 +89,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerHP
   maxHP: 100
+  currentHP: 100
+  HEalthCounter: {fileID: 0}
 --- !u!1 &955242366100335056
 GameObject:
   m_ObjectHideFlags: 0
@@ -136,6 +138,8 @@ MonoBehaviour:
   BulletPrefab: {fileID: 1526426391283554583, guid: 1ea3606989378534f9af3aad3c4b0fd8, type: 3}
   parryTHISSHIT: {fileID: 7463858230536549969, guid: bee1b6cdd63a32d43960f86503dcf523, type: 3}
   shieldfireCooldown: 2
+  spreadshotcooldown: 2
+  bulletFireRate: 0.1
 --- !u!1001 &562936450500096968
 PrefabInstance:
   m_ObjectHideFlags: 0
