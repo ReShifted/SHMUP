@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 65428683186577542}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.11448, y: -0.014492, z: -0.0045071}
+  m_LocalScale: {x: 1.5657, y: 1.5657, z: 1.5657}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1371829548302776127}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15041450e60e7e244b64a364c82611a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  BulletPrefab: {fileID: 2578916420136359313, guid: 7a370683c4ebdb842a7ea797447fc67b, type: 3}
+  BulletPrefab: {fileID: 1526426391283554583, guid: 1ea3606989378534f9af3aad3c4b0fd8, type: 3}
   parryTHISSHIT: {fileID: 7463858230536549969, guid: bee1b6cdd63a32d43960f86503dcf523, type: 3}
   shieldfireCooldown: 2
 --- !u!1001 &562936450500096968
