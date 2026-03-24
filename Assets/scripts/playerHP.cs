@@ -33,11 +33,16 @@ public class playerHP : MonoBehaviour
 
         if (currentHP <= 0)
         {
-            currentHP = 0;
-            Debug.Log("Player is dead");
+            die();
         }
 
         // Update UI
         HealthCounterPLACEHOLDER.instance.healthCounter(currentHP);
+    }
+
+    public void die()
+    {
+        Debug.Log("Player has died.");
+        Destroy(gameObject);
     }
 }
