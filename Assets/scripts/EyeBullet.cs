@@ -15,7 +15,7 @@ public class EyeBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Destroy(gameObject, 20f);
+        Destroy(gameObject, 4f);
     }
     private void OnCollisionEnter(Collision collision)
     {
