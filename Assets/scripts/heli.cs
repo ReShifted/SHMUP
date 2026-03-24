@@ -26,7 +26,7 @@ public class heli : MonoBehaviour
 
     // start and target x positions
     private float startX;
-    public float targetX = -6f;
+    public float targetX = -2f;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

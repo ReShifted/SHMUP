@@ -7,19 +7,20 @@ public class manager : MonoBehaviour
     public GameObject Enemy_Heli;
     public GameObject Enemy_Bomber;
     [SerializeField] public List<GameObject> AllEnemys = new List<GameObject>();
+    public int wave = 0;
+    private float spawn;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        SpawnEyeEnemy();
-        SpawnHeliEnemy();
-        SpawnBomberEnemy();
+        newwave();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        HasMissingEntries();
+        newwave();
     }
     
     public void SpawnEyeEnemy()
@@ -41,9 +42,44 @@ public class manager : MonoBehaviour
     {
         if (AllEnemys.Count == 0)
         {
-            SpawnEyeEnemy();
-            SpawnHeliEnemy();
-            SpawnBomberEnemy();
+            wave += 1;
+            for (int i = 0; i < wave * 2 + 1; i++)
+            {
+                spawn = Random.Range(0, 2);
+                if (spawn == 0)
+                {
+                    SpawnEyeEnemy();
+                }
+                else if (spawn == 1)
+                {
+                    SpawnHeliEnemy();
+                }
+                else
+                {
+                    SpawnBomberEnemy();
+                }
+            }
+        } }
+            public bool HasMissingEntries()
+    {
+        for (int i = 0; i < AllEnemys.Count; i++)
+        {
+            if (AllEnemys[i] == null) //als de asteroid is vernietigd
+            {
+                AllEnemys.RemoveAt(i); //haal hem dan uit de lijst
+                return true;
+            }
         }
+        return false;
     }
 }
+
+    //public void DamagePlayer(playerHP player)
+    //{
+    //    if (player != null)
+    //    {
+    //        player.TakeDamage(damage);
+    //        Debug.Log("Player took " + damage + " damage!");
+    //    }
+    //}
+

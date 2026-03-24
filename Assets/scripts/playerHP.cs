@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerHP : MonoBehaviour
 {
- public int maxHP = 100;
-    private int currentHP;
+    public int maxHP = 100;
+    public int currentHP=100;
     void Update()
     {
         
@@ -11,7 +12,7 @@ public class playerHP : MonoBehaviour
 
     void Start()
 {
-    currentHP = maxHP;
+    //currentHP = maxHP;
 
     HealthCounterPLACEHOLDER.instance.healthCounter(currentHP);
 }
@@ -19,10 +20,11 @@ public class playerHP : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("EnemyBullet"))
         {
-            Basedamaging basedamaging = collision.gameObject.GetComponent<Basedamaging>();
-            if (basedamaging != null)
+            currentHP -= 10;
+            if (currentHP <= 0)
             {
-                basedamaging.DamagePlayer(this);
+                SceneManager.LoadScene("restartscreen");
+                die();
             }
         }
     }
@@ -33,6 +35,7 @@ public class playerHP : MonoBehaviour
 
         if (currentHP <= 0)
         {
+            SceneManager.LoadScene("restartscreen");
             die();
         }
 
