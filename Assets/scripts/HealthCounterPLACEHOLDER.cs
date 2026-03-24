@@ -10,7 +10,7 @@ public class HealthCounterPLACEHOLDER : MonoBehaviour
     {
         instance = this;
     }
-    public void healthCounter(int currentHP)
+    public void healthCounter(float currentHP)
     {
         healthtext.text = "Health: " + currentHP;
     }

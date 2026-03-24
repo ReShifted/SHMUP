@@ -3,30 +3,30 @@ using UnityEngine.SceneManagement;
 
 public class playerHP : MonoBehaviour
 {
-    public int maxHP = 100;
-    public int currentHP=100;
-    public HealthCounterPLACEHOLDER healthCounter;
+    public float maxHP = 100;
+    public float currentHP=100;
+    public HealthCounterPLACEHOLDER HEalthCounter;
     void Update()
     {
-        
+        maxHP = currentHP;
     }
 
     void Start()
 {
     //currentHP = maxHP;
 
-    healthCounter.instance.healthCounter(currentHP);
+    HEalthCounter.healthCounter(currentHP);
 }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("EnemyBullet"))
         {
-            currentHP -= 10;
-            healthCounter.instance.healthCounter(currentHP);
+            currentHP = currentHP - 10;
             if (currentHP <= 0)
             {
+                Debug.Log("Player has died.");
                 SceneManager.LoadScene("restartscreen");
-                die();
+              //  die();
             }
         }
     }
