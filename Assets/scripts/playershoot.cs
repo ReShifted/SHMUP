@@ -8,6 +8,8 @@ public class playershoot : MonoBehaviour
     private float shieldlastFireTime = -2f;
     public float shieldfireCooldown = 2f;
     public float spreadshotcooldown = 2f;
+    public float mainshotcooldown = 2f;
+    public float mainshotlastFireTime = -2f;
 
     private float[] angles = {15f,0f,-15f};
 
@@ -19,8 +21,10 @@ public class playershoot : MonoBehaviour
     void Update()
     {
         // Shoot with space key
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Time.time >= mainshotlastFireTime + mainshotcooldown)
         {
+            mainshotlastFireTime = Time.time;
+        
             Instantiate(BulletPrefab, transform.position, Quaternion.identity);
         }
 
