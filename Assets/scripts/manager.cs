@@ -46,4 +46,13 @@ public class manager : MonoBehaviour
             SpawnBomberEnemy();
         }
     }
+
+    //public void DamagePlayer(playerHP player)
+    //{
+    //    if (player != null)
+    //    {
+    //        player.TakeDamage(damage);
+    //        Debug.Log("Player took " + damage + " damage!");
+    //    }
+    //}
 }

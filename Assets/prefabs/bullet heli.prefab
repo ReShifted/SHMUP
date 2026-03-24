@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3342744716733777904}
   - component: {fileID: 6959034058488468496}
   - component: {fileID: 4349133647902682878}
-  - component: {fileID: 495636447867262105}
   m_Layer: 7
   m_Name: bullet heli
   m_TagString: EnemyBullet
@@ -155,17 +154,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::bulletheli
   Timemanager: {fileID: 5196071613704050863, guid: 1f1d38a9d00269248869e61a8735889a, type: 3}
---- !u!114 &495636447867262105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5662219992552703168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31788e79ba129434685950ca790fc496, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Basedamaging
-  playerHP: {fileID: 0}
-  damage: 5
