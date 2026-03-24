@@ -11,7 +11,7 @@ public class bomberenemy : MonoBehaviour
         transform.position = new Vector3(transform.position.x-0.01f, transform.position.y, transform.position.z);
 
 
-        Destroy(gameObject, 20f);
+        Destroy(gameObject, 4f);
     }
     private void OnCollisionEnter(Collision collision)
     {
