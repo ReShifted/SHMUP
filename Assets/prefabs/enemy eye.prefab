@@ -157,3 +157,4 @@ MonoBehaviour:
   targetX: -6
   moveDuration: 5
   speed: 1
+  Manager: {fileID: 3781780567219304824, guid: fa2b7363857286c40b5570251d7364cb, type: 3}

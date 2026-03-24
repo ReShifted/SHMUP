@@ -155,6 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::heli
   moveDuration: 5
   speed: 1
+  Manager: {fileID: 3781780567219304824, guid: fa2b7363857286c40b5570251d7364cb, type: 3}
   heliprojectile: {fileID: 6959034058488468496, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
   heliprojectilerotation: {fileID: 5662219992552703168, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
   helifireCooldown: 6
