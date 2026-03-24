@@ -11,7 +11,7 @@ public class heli : MonoBehaviour
     // duration to move on x axis
     public float moveDuration = 5f;
     public float speed = 1f;
-
+    public manager Manager;
 
     [Header("Heli stats")]
     //[space]
@@ -69,6 +69,8 @@ public class heli : MonoBehaviour
             health -= 10f;
             if (health <= 0f)
             {
+                Debug.Log("1");
+                Manager.AllEnemys.Remove(gameObject);
                 Destroy(gameObject);
             }
         }
