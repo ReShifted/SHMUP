@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class ButtonRestart : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -12,5 +12,9 @@ public class ButtonRestart : MonoBehaviour
     void Update()
     {
         
+    }
+    public void restart()
+    {
+        SceneManager.LoadScene("Main scene");
     }
 }
