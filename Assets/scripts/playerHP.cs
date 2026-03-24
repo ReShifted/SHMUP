@@ -45,9 +45,9 @@ public class playerHP : MonoBehaviour
     //    HealthCounterPLACEHOLDER.instance.healthCounter(currentHP);
     //}
 
-    public void die()
-    {
-        Debug.Log("Player has died.");
-        Destroy(gameObject);
-    }
+    //public void die()
+    //{
+    //    Debug.Log("Player has died.");
+    //    Destroy(gameObject);
+    //}
 }
