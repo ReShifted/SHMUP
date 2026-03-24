@@ -155,6 +155,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::eye
   Eyeprojectile: {fileID: 3150388727338499519, guid: 4116636f5c01144469003b455d0b3f25, type: 3}
   targetX: -6
-  moveDuration: 5
+  moveDuration: 3
   speed: 1
   Manager: {fileID: 3781780567219304824, guid: fa2b7363857286c40b5570251d7364cb, type: 3}
