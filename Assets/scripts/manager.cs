@@ -6,7 +6,7 @@ public class manager : MonoBehaviour
     public GameObject Enemy_Eye;
     public GameObject Enemy_Heli;
     public GameObject Enemy_Bomber;
-    [SerializeField] private List<GameObject> AllEnemys = new List<GameObject>();
+    [SerializeField] public List<GameObject> AllEnemys = new List<GameObject>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,17 +24,26 @@ public class manager : MonoBehaviour
     
     public void SpawnEyeEnemy()
     {
-        Instantiate(Enemy_Eye, new Vector3(11,Random.Range(-4,6),  0), Quaternion.identity);
-        AllEnemys.Add(Enemy_Eye);
+        GameObject eyeenemy = Instantiate(Enemy_Eye, new Vector3(11,Random.Range(-4,6),  0), Quaternion.identity) as GameObject;
+        AllEnemys.Add(eyeenemy);
     }
     public void SpawnHeliEnemy()
     {
-        Instantiate(Enemy_Heli, new Vector3(11, Random.Range(-4, 6), 0), Quaternion.identity);
-        AllEnemys.Add(Enemy_Heli);
+        GameObject helienemy = Instantiate(Enemy_Heli, new Vector3(11, Random.Range(-4, 6), 0), Quaternion.identity) as GameObject;
+        AllEnemys.Add(helienemy);
     }
     public void SpawnBomberEnemy()
     {
-        Instantiate(Enemy_Bomber, new Vector3(11, Random.Range(-4, 6), 0), Quaternion.identity);
-        AllEnemys.Add(Enemy_Bomber);
+        GameObject nukeenemy = Instantiate(Enemy_Bomber, new Vector3(11, Random.Range(-4, 6), 0), Quaternion.identity) as GameObject;
+        AllEnemys.Add(nukeenemy);
+    }
+    public void newwave()
+    {
+        if (AllEnemys.Count == 0)
+        {
+            SpawnEyeEnemy();
+            SpawnHeliEnemy();
+            SpawnBomberEnemy();
+        }
     }
 }

@@ -7,12 +7,12 @@ public class eye : MonoBehaviour
     private float EyelastFireTime = -2f;
     private float EyefireCooldown = 2f;
     private float health = 100f;
-
     private float startX;
     public float targetX = -6f;
     float timer = 0f;
     public float moveDuration = 5f;
     public float speed = 1f;
+    public manager Manager;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -50,6 +50,7 @@ public class eye : MonoBehaviour
             health -= 10f;
             if (health <= 0f)
             {
+                Manager.AllEnemys.Remove(gameObject);
                 Destroy(gameObject);
             }
         }
