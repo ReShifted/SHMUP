@@ -24,17 +24,17 @@ public class manager : MonoBehaviour
     
     public void SpawnEyeEnemy()
     {
-        Instantiate(Enemy_Eye, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(Enemy_Eye, new Vector3(11,Random.Range(-4,6),  0), Quaternion.identity);
         AllEnemys.Add(Enemy_Eye);
     }
     public void SpawnHeliEnemy()
     {
-        Instantiate(Enemy_Heli, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(Enemy_Heli, new Vector3(11, Random.Range(-4, 6), 0), Quaternion.identity);
         AllEnemys.Add(Enemy_Heli);
     }
     public void SpawnBomberEnemy()
     {
-        Instantiate(Enemy_Bomber, new Vector3(0, 0, 0), Quaternion.identity);
+        Instantiate(Enemy_Bomber, new Vector3(11, Random.Range(-4, 6), 0), Quaternion.identity);
         AllEnemys.Add(Enemy_Bomber);
     }
 }
