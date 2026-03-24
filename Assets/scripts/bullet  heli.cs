@@ -34,7 +34,7 @@ public class bulletheli : MonoBehaviour
         {
             for (int i = 0; i < 5; i++)
             {
-                rb.linearVelocity = -rb.linearVelocity * 2;
+                rb.linearVelocity = -rb.linearVelocity * 12;
                 //Timemanager DoSlowmotion();
                 Timemanager.DoSlowmotion();
             }
