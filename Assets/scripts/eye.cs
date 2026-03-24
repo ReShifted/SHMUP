@@ -8,7 +8,7 @@ public class eye : MonoBehaviour
     private float EyefireCooldown = 2f;
     private float health = 100f;
     private float startX;
-    public float targetX = -6f;
+    public float targetX = -3f;
     float timer = 0f;
     public float moveDuration = 5f;
     public float speed = 1f;
