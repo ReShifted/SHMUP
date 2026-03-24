@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::bomberenemy
   health: 100
+  Manager: {fileID: 3781780567219304824, guid: fa2b7363857286c40b5570251d7364cb, type: 3}
 --- !u!114 &-8052419031414274966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,5 +170,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31788e79ba129434685950ca790fc496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Basedamaging
-  playerHP: {fileID: 0}
   damage: 5
