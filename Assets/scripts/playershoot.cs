@@ -9,6 +9,9 @@ public class playershoot : MonoBehaviour
     public float shieldfireCooldown = 2f;
     public float spreadshotcooldown = 2f;
 
+    private float LastBulletFireTime = 0f;
+    public float bulletFireRate = 0.2f;
+
     private float[] angles = {15f,0f,-15f};
 
     void Start()
@@ -19,10 +22,10 @@ public class playershoot : MonoBehaviour
     void Update()
     {
         // Shoot with space key
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(BulletPrefab, transform.position, Quaternion.identity);
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    Instantiate(BulletPrefab, transform.position, Quaternion.identity);
+        //}
 
         // parry with E key
         if (Input.GetKeyDown(KeyCode.E)&& Time.time >= shieldlastFireTime + shieldfireCooldown)
@@ -41,6 +44,14 @@ public class playershoot : MonoBehaviour
                 Instantiate(BulletPrefab, transform.position, rotation);
             }
         }
+        //spawns bullet every 0.2 seconds
+        if(Time.time >= LastBulletFireTime + bulletFireRate)
+        {
+            LastBulletFireTime = Time.time;
+            Instantiate(BulletPrefab, transform.position, Quaternion.identity);
+        }
+
+
     }
 }
 
