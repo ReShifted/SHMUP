@@ -4,13 +4,11 @@ public class Basedamaging : MonoBehaviour
 {
     public playerHP playerHP;
     public int damage = 5;
-    protected override void DamagePlayer()
+    public void DamagePlayer(playerHP player)
     {
-        playerHP = GameObject.Find("Player").GetComponent<playerHP>();
-
-        if (playerHP != null)
+        if (player != null)
         {
-            playerHP.TakeDamage(damage);
+            player.TakeDamage(damage);
         }
     }
 }

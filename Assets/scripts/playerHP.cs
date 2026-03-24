@@ -6,7 +6,7 @@ public class playerHP : MonoBehaviour
     private int currentHP;
     void Start()
     {
-        
+        currentHP = maxHP;
     }
 
     void Update()
@@ -21,8 +21,19 @@ public class playerHP : MonoBehaviour
             Basedamaging basedamaging = collision.gameObject.GetComponent<Basedamaging>();
             if (basedamaging != null)
             {
-                basedamaging.DamagePlayer();
+                basedamaging.DamagePlayer(GetComponent<playerHP>());
             }
+        }
+    }
+
+    public void TakeDamage(int amount)
+    {
+        currentHP -= amount;
+
+        if (currentHP <= 0)
+        {
+            currentHP = 0;
+            Debug.Log("Player is dead");
         }
     }
 }
