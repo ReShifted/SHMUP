@@ -11,7 +11,8 @@ public class feulmeter : MonoBehaviour
     public float timer = 1f;
     public float currenttime = 0f;
 
-    public Range feulrange = new Range(0, 100);
+    // replace the Range field
+    public float feulrange = 1f; // normalized 0..1
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,19 +24,29 @@ public class feulmeter : MonoBehaviour
     void Update()
     {
         feuldown();
-        
+        // update normalized value and x scale every frame
+        feulrange = Mathf.Clamp01(feul / 100f);
+        transform.localScale = new Vector3(feulrange, transform.localScale.y, transform.localScale.z);
     }
+
     public void feuldown()
     {
-
         if (Time.time >= currenttime + timer && feul > 0)
         {
             currenttime = Time.time;
-            feul = feul - 1f;
+            feul -= 1f;
         }
         else if (feul <= 0)
         {
             SceneManager.LoadScene("restartscreen");
+        }
+    }
+    public void feulup()
+    {
+        feul += 50f;
+        if (feul > 100f)
+        {
+            feul = 100f;
         }
     }
 }
