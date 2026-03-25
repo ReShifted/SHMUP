@@ -16,13 +16,15 @@ public class soundmanager : MonoBehaviour
     }
     public void PlayParrySound(AudioClip audioclip,Transform spawntransform)
     {
-       // AudioSource.PlayClipAtPoint(PARRY, Camera.main.transform.position);
-       AudioSource audiosource = Instantiate(parrysound,spawntransform.position,Quaternion.identity);
-        audiosource.clip = audioclip;
-        audiosource.Play();
-        float cliplength = audioclip.length;
-        Destroy(audiosource.gameObject, cliplength);
-
+        if (!parrysound.isPlaying)
+        {
+            // AudioSource.PlayClipAtPoint(PARRY, Camera.main.transform.position);
+            AudioSource audiosource = Instantiate(parrysound, spawntransform.position, Quaternion.identity);
+            audiosource.clip = audioclip;
+            audiosource.Play();
+            float cliplength = audioclip.length;
+            Destroy(audiosource.gameObject, cliplength);
+        }
 
     }
 }
