@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5167995190467450625}
   - component: {fileID: 3052936536555888422}
   - component: {fileID: 8834557273473927122}
-  - component: {fileID: 1536413850205675398}
   - component: {fileID: 1746655047550444762}
+  - component: {fileID: 3665450731376734349}
   m_Layer: 6
   m_Name: 'heli '
   m_TagString: Enemy
@@ -121,26 +121,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &1536413850205675398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7420710676839253285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd2188dbf107bf141a7bf1f723b254c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::heli
-  moveDuration: 5
-  speed: 1
-  Manager: {fileID: 3781780567219304824, guid: fa2b7363857286c40b5570251d7364cb, type: 3}
-  heliprojectile: {fileID: 6959034058488468496, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
-  heliprojectilerotation: {fileID: 5662219992552703168, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
-  helifireCooldown: 6
-  health: 100
-  targetX: -6
 --- !u!65 &1746655047550444762
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -162,6 +142,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3665450731376734349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7420710676839253285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95a21c8dbb959640af6216e5992b8ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HelIJustinVersion
+  timer: 0
+  moveDuration: 3
+  resumeTime: 7
+  speed: 3
+  health: 100
+  bulletheli: {fileID: 5662219992552703168, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
+  projectilespeed: 10
 --- !u!1001 &7061250339733053988
 PrefabInstance:
   m_ObjectHideFlags: 0

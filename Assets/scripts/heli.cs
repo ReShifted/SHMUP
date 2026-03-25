@@ -21,7 +21,7 @@ public class heli : MonoBehaviour
     private float helilastFireTime = -2f;
     [Tooltip("This var changes the fire cooldown of the heli")]
     public float helifireCooldown = 2f;
-
+    public feulmeter Feulmeter;
     public float health= 100f;
 
     // start and target x positions
@@ -32,6 +32,13 @@ public class heli : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (Feulmeter == null)
+        {
+            // Feulmeter = FindObjectOfType<feulmeter>();
+            // or
+            var img = GameObject.Find("Canvas/Image (1)/Image (2)");
+            if (img != null) Feulmeter = img.GetComponent<feulmeter>();
+        }
         helirb = GetComponent<Rigidbody>();
         startX = transform.position.x;
         timer = 0f;
@@ -69,6 +76,7 @@ public class heli : MonoBehaviour
             health -= 10f;
             if (health <= 0f)
             {
+                Feulmeter.feulup();
                 Debug.Log("1");
                 Manager.AllEnemys.Remove(gameObject);
                 Destroy(gameObject);
