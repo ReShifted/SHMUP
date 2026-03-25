@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6840314706521644642}
   - component: {fileID: 5689968346241977057}
   - component: {fileID: 6866213653479693365}
-  - component: {fileID: 2249005414298938567}
+  - component: {fileID: -8226942825441683538}
   m_Layer: 6
   m_Name: enemy eye
   m_TagString: Enemy
@@ -142,7 +142,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &2249005414298938567
+--- !u!114 &-8226942825441683538
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,14 +151,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 8013031942203143063}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f4923a611dba39449130f4222296f85, type: 3}
+  m_Script: {fileID: 11500000, guid: f60055eb86e8ae44fb15b988488efe04, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::eye
-  Eyeprojectile: {fileID: 3150388727338499519, guid: 4116636f5c01144469003b455d0b3f25, type: 3}
-  targetX: -6
+  m_EditorClassIdentifier: '::'
+  timer: 0
   moveDuration: 3
-  speed: 1
-  Manager: {fileID: 3781780567219304824, guid: fa2b7363857286c40b5570251d7364cb, type: 3}
+  resumeTime: 7
+  speed: 3
+  health: 100
+  bulleteye: {fileID: 3150388727338499519, guid: 4116636f5c01144469003b455d0b3f25, type: 3}
+  projectilespeed: 35
 --- !u!1001 &1278489990451774570
 PrefabInstance:
   m_ObjectHideFlags: 0

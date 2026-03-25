@@ -1,30 +1,19 @@
 using UnityEngine;
 
-public class JustinHeliBullet : MonoBehaviour
+public class justinEyeBullet : MonoBehaviour
 {
     public TimeManager Timemanager;
     private Rigidbody rb;
-<<<<<<< HEAD
-    private float speed = 1f;
-=======
+    private float speed = 8f;
 
->>>>>>> 02c2c9a3cdd0360da24856a65340b9221a308daf
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         Timemanager = FindFirstObjectByType<TimeManager>();
-<<<<<<< HEAD
-        //if (Timemanager == null) Debug.LogWarning("TimeManager not found. Assign in Inspector for better performance.");
+
         rb.linearVelocity = new Vector3(-speed, 0, 0);
-        Invoke(nameof(DestroySelf), 4f); // schedule removable destroy
-    }
-    private void DestroySelf()
-    {
-        Destroy(gameObject);
-=======
 
         Destroy(gameObject, 2f);
->>>>>>> 02c2c9a3cdd0360da24856a65340b9221a308daf
     }
 
     private void DestroySelf()
@@ -49,19 +38,15 @@ public class JustinHeliBullet : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            DestroySelf();
+            Destroy(gameObject);
         }
-        if (other.CompareTag("PARRYIT") && this.CompareTag("EnemyBullet"))
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
         {
-            this.tag = "PlayerBullet";
-            CancelInvoke(nameof(DestroySelf));
-            Invoke(nameof(DestroySelf), 4f);
-            rb.linearVelocity = -rb.linearVelocity * 2f;
-            Timemanager.DoSlowmotion();
-        }
-        else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
-        {
-            rb.linearVelocity = rb.linearVelocity * 2f;
+            Destroy(gameObject);
         }
     }
 }
