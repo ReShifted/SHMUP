@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7528740374941865648}
   - component: {fileID: 3781780567219304824}
   - component: {fileID: 693213236952110717}
+  - component: {fileID: -6984437151077997995}
   m_Layer: 0
   m_Name: enemy manager
   m_TagString: Untagged
@@ -64,3 +65,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthCounterPLACEHOLDER
   instance: {fileID: 1562624165882823735, guid: 8a309421f8eaa0a458bcf4996e70231f, type: 3}
   healthtext: {fileID: 0}
+--- !u!114 &-6984437151077997995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105964617987911210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ead493964e5c0a0468b008b31e9ed506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::soundmanager
