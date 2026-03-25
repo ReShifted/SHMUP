@@ -41,4 +41,5 @@ public class EyeBullet : MonoBehaviour
         {
             rb.linearVelocity = rb.linearVelocity * 2f;
         }
-    } }
+    }
+}
