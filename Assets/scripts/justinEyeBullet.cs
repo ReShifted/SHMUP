@@ -36,6 +36,7 @@ public class justinEyeBullet : MonoBehaviour
         else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
         {
             rb.linearVelocity = rb.linearVelocity * 2f;
+            soundmanager.instance.PlayParrySound(parrySound, transform);
         }
 
         if (other.CompareTag("Player"))

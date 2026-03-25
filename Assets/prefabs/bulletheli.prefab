@@ -154,3 +154,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Timemanager: {fileID: 5196071613704050863, guid: 1f1d38a9d00269248869e61a8735889a, type: 3}
+  parrySound: {fileID: 8300000, guid: 1c3c5a2e88ce18845b20597349f35576, type: 3}
