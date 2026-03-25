@@ -4,31 +4,41 @@ public class EyeBullet : MonoBehaviour
 {
     public TimeManager Timemanager;
     private Rigidbody rb;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private float speed = 1f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Timemanager = FindAnyObjectByType<TimeManager>();
-        rb.linearVelocity = Vector3.left;
+        Timemanager = FindFirstObjectByType<TimeManager>();
+        //if (Timemanager == null) Debug.LogWarning("TimeManager not found. Assign in Inspector for better performance.");
+        rb.linearVelocity = new Vector3(-speed,0,0);
+        Invoke(nameof(DestroySelf), 4f); // schedule removable destroy
     }
 
-    // Update is called once per frame
-    void Update()
+    private void DestroySelf()
     {
-        Destroy(gameObject, 4f);
+        Destroy(gameObject);
     }
+
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("PARRYIT"))
-        {
-            rb.linearVelocity = -rb.linearVelocity*2;
-
-            Timemanager.DoSlowmotion();
-        }
-        else if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
         }
     }
-    
-}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("PARRYIT") && this.CompareTag("EnemyBullet"))
+        {
+            this.tag = "PlayerBullet";
+            CancelInvoke(nameof(DestroySelf));
+            Invoke(nameof(DestroySelf), 4f);
+            rb.linearVelocity = -rb.linearVelocity * 2f;
+            Timemanager.DoSlowmotion();
+        } else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
+        {
+            rb.linearVelocity = rb.linearVelocity * 2f;
+        }
+    } }
