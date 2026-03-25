@@ -4,29 +4,15 @@ public class JustinHeliBullet : MonoBehaviour
 {
     public TimeManager Timemanager;
     private Rigidbody rb;
-<<<<<<< HEAD
     private float speed = 1f;
-=======
 
->>>>>>> 02c2c9a3cdd0360da24856a65340b9221a308daf
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         Timemanager = FindFirstObjectByType<TimeManager>();
-<<<<<<< HEAD
-        //if (Timemanager == null) Debug.LogWarning("TimeManager not found. Assign in Inspector for better performance.");
         rb.linearVelocity = new Vector3(-speed, 0, 0);
-        Invoke(nameof(DestroySelf), 4f); // schedule removable destroy
+        Invoke(nameof(DestroySelf), 4f); 
     }
-    private void DestroySelf()
-    {
-        Destroy(gameObject);
-=======
-
-        Destroy(gameObject, 2f);
->>>>>>> 02c2c9a3cdd0360da24856a65340b9221a308daf
-    }
-
     private void DestroySelf()
     {
         Destroy(gameObject);
