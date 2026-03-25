@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6784992584579776342}
   - component: {fileID: 3342744716733777904}
   - component: {fileID: 6959034058488468496}
-  - component: {fileID: 4349133647902682878}
+  - component: {fileID: 8217790276367926550}
   m_Layer: 7
-  m_Name: bullet heli
+  m_Name: bulletheli
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,8 +31,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7.79, y: 0, z: -12.9800005}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -108,7 +108,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -141,7 +141,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &4349133647902682878
+--- !u!114 &8217790276367926550
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,7 +150,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5662219992552703168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 848500b02804e634a8fde39da6e96ef8, type: 3}
+  m_Script: {fileID: 11500000, guid: 67fa4d2b91345b544aa3ea5bb453b89a, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::bulletheli
-  Timemanager: {fileID: 5196071613704050863, guid: 1f1d38a9d00269248869e61a8735889a, type: 3}
+  m_EditorClassIdentifier: '::'

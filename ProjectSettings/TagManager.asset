@@ -8,6 +8,7 @@ TagManager:
   - PARRYIT
   - Enemy
   - PlayerBullet
+  - EnemyKiller
   layers:
   - Default
   - TransparentFX

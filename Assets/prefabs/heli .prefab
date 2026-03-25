@@ -156,7 +156,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HelIJustinVersion
   timer: 0
   moveDuration: 3
+  resumeTime: 7
   speed: 3
+  health: 100
+  bulletheli: {fileID: 5662219992552703168, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
+  projectilespeed: 10
 --- !u!1001 &7061250339733053988
 PrefabInstance:
   m_ObjectHideFlags: 0
