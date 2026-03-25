@@ -45,7 +45,7 @@ public class manager : MonoBehaviour
             wave += 1;
             for (int i = 0; i < wave * 2 + 1; i++)
             {
-                spawn = Random.Range(0, 2);
+                spawn = Random.Range(0, 3);
                 if (spawn == 0)
                 {
                     SpawnEyeEnemy();
