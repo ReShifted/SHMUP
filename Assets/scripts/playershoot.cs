@@ -7,7 +7,8 @@ public class playershoot : MonoBehaviour
     public GameObject parryTHISSHIT;
     private float shieldlastFireTime = -2f;
     public float shieldfireCooldown = 2f;
-    public float spreadshotcooldown = 2f;
+    public float spreadshotcooldown = 0.3f;
+    private float extraSpreadshotCooldown = 1f;
 
     private float LastBulletFireTime = 0f;
     public float bulletFireRate = 0.1f;
@@ -35,7 +36,7 @@ public class playershoot : MonoBehaviour
         }
 
         // Spread shot with Q key
-        if (Input.GetKeyDown(KeyCode.Q) && Time.time >= shieldlastFireTime + spreadshotcooldown)
+        if (Input.GetKeyDown(KeyCode.Q) && Time.time >= extraSpreadshotCooldown + spreadshotcooldown)
         {
             shieldlastFireTime = Time.time;
             foreach (float angle in angles)

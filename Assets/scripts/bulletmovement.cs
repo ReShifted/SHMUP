@@ -2,22 +2,27 @@ using UnityEngine;
 
 public class bulletmovement : MonoBehaviour
 {
-
     public float speed = 20f;
+
     void Update()
     {
-        //moves the bullet forward
+        // moves the bullet forward
         transform.Translate(Vector3.right * speed * Time.deltaTime);
 
-        //destroys the bullet after 3 seconds
-        Destroy (gameObject, 3f);
+        // destroys the bullet after 3 seconds
+        Destroy(gameObject, 3f);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("PARRYIT"))
+        if (other.CompareTag("PARRYIT"))
         {
-            speed = speed+5;
+            speed += 5;
+        }
+
+        if (other.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
         }
     }
 }
