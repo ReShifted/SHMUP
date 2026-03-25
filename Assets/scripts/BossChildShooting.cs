@@ -1,0 +1,3 @@
+using UnityEngine;
+using System.Collections;
+public class BossChildShooting : MonoBehaviour { public GameObject bossbullet; private float[] angles = { 0f, 30f, 60f, 90f, 120f, 150f, 180f, 210f, 240f, 270f, 300f, 330f }; public float shootCooldown = 2f; public float delayAfterParent = 0.5f; private bool canShoot = true; void Update() { if (canShoot) { StartCoroutine(ShootRoutine()); } } IEnumerator ShootRoutine() { canShoot = false; yield return new WaitForSeconds(delayAfterParent); Shoot360(); yield return new WaitForSeconds(shootCooldown); canShoot = true; } void Shoot360() { foreach (float angle in angles) { Quaternion rotation = Quaternion.Euler(0, 0, angle); Instantiate(bossbullet, transform.position, rotation); } } }

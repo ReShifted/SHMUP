@@ -5,6 +5,7 @@ public class justinEyeBullet : MonoBehaviour
     public TimeManager Timemanager;
     private Rigidbody rb;
     private float speed = 8f;
+    [SerializeField] public AudioClip parrySound;
 
     void Start()
     {
@@ -26,14 +27,16 @@ public class justinEyeBullet : MonoBehaviour
         if (other.CompareTag("PARRYIT") && this.CompareTag("EnemyBullet"))
         {
             this.tag = "PlayerBullet";
+            rb.linearVelocity = -rb.linearVelocity * 2f;
+            soundmanager.instance.PlayParrySound(parrySound,transform);
+            Timemanager.DoSlowmotion();
             CancelInvoke(nameof(DestroySelf));
             Invoke(nameof(DestroySelf), 4f);
-            rb.linearVelocity = -rb.linearVelocity * 2f;
-            Timemanager.DoSlowmotion();
         }
         else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
         {
             rb.linearVelocity = rb.linearVelocity * 2f;
+            soundmanager.instance.PlayParrySound(parrySound, transform);
         }
 
         if (other.CompareTag("Player"))

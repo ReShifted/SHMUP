@@ -153,3 +153,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca80f34f37cc50f488e18db6e37ecd11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  Timemanager: {fileID: 5196071613704050863, guid: 1f1d38a9d00269248869e61a8735889a, type: 3}
+  parrySound: {fileID: 8300000, guid: be19a30f166afbc4ab1a18240e06ab3f, type: 3}

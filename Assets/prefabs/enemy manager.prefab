@@ -77,3 +77,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead493964e5c0a0468b008b31e9ed506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::soundmanager
+  PARRY: {fileID: 0}
