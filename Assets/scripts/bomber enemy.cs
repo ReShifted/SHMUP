@@ -24,5 +24,11 @@ public class bomberenemy : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+        if (collision.gameObject.CompareTag("EnemyKiller"))
+        {
+            Manager.AllEnemys.Remove(gameObject);
+            Destroy(gameObject);
+            }
     }
 }

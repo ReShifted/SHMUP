@@ -50,8 +50,6 @@ public class playershoot : MonoBehaviour
             LastBulletFireTime = Time.time;
             Instantiate(BulletPrefab, transform.position, Quaternion.identity);
         }
-
-
     }
 }
 
