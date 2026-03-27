@@ -108,7 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   speed: 2
   player2: {fileID: 6297272116414861723, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
-  homingStrength: 1
+  homingStrength: 0.7
 --- !u!65 &2242471127140135248
 BoxCollider:
   m_ObjectHideFlags: 0
