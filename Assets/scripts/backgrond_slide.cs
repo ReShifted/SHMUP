@@ -46,8 +46,8 @@ public class backgrond_slide : MonoBehaviour
     public float moveSpeed = 2f;
 
     [Header("Despawn / Spawn")]
-    public float leftDespawnX = -15f;  // If tile goes past this, remove it
-    public float spawnX = 35f;         // New tile spawns here on the right
+    public float leftDespawnX = -200f;  // If tile goes past this, remove it
+    public float spawnX = 15f;         // New tile spawns here on the right
 
     private List<GameObject> activeTiles = new List<GameObject>();
 
@@ -64,9 +64,10 @@ public class backgrond_slide : MonoBehaviour
 
     void SpawnInitialTiles()
     {
-        for (int i = 0; i < initialTileCount; i++)
+        initialTileCount += 1;
+        for (int i = 1; i < initialTileCount; i++)
         {
-            Vector3 spawnPos = new Vector3(spawnX + i * tileWidth, 0f, 0f);
+            Vector3 spawnPos = new Vector3((spawnX + i * tileWidth)-120f, 0f, 12.5f);
             GameObject tile = SpawnRandomTile(spawnPos);
             activeTiles.Add(tile);
         }
@@ -92,7 +93,7 @@ public class backgrond_slide : MonoBehaviour
             Destroy(firstTile);
 
             GameObject lastTile = activeTiles[activeTiles.Count - 1];
-            Vector3 newSpawnPos = new Vector3(lastTile.transform.position.x + tileWidth, 0f, 0f);
+            Vector3 newSpawnPos = new Vector3(lastTile.transform.position.x + tileWidth, 0f, 12.5f);
 
             GameObject newTile = SpawnRandomTile(newSpawnPos);
             activeTiles.Add(newTile);
