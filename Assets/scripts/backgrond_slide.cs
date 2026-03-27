@@ -39,6 +39,8 @@ public class backgrond_slide : MonoBehaviour
 {
     [Header("Tile setup")]
     public GameObject[] tilePrefabs;   // Random tiles to choose from
+    public GameObject[] waisttilePrefabs;
+    public GameObject[] maxtilePrefabs;
     public int initialTileCount = 5;
     public float tileWidth = 10f;      // Width of one tile
 
@@ -67,7 +69,7 @@ public class backgrond_slide : MonoBehaviour
         initialTileCount += 1;
         for (int i = 1; i < initialTileCount; i++)
         {
-            Vector3 spawnPos = new Vector3((spawnX + i * tileWidth)-120f, -5f, 12.5f);
+            Vector3 spawnPos = new Vector3((spawnX + i * tileWidth) - 120f, -5f, 12.5f);
             GameObject tile = SpawnRandomTile(spawnPos);
             activeTiles.Add(tile);
         }
@@ -94,15 +96,36 @@ public class backgrond_slide : MonoBehaviour
 
             GameObject lastTile = activeTiles[activeTiles.Count - 1];
             Vector3 newSpawnPos = new Vector3(lastTile.transform.position.x + tileWidth, -5f, 12.5f);
-
-            GameObject newTile = SpawnRandomTile(newSpawnPos);
-            activeTiles.Add(newTile);
+            if (Time.deltaTime < 45f)
+            {
+                GameObject newTile = SpawnRandomTile(newSpawnPos);
+                activeTiles.Add(newTile);
+            }
+            else if (Time.deltaTime < 90f)
+            {
+                GameObject newTile = SpawnRandomwaistTile(newSpawnPos);
+                activeTiles.Add(newTile);
+            }
+            else
+            {
+                GameObject newTile = SpawnRandommaxTile(newSpawnPos);
+                activeTiles.Add(newTile);
+            }
         }
     }
-
-    GameObject SpawnRandomTile(Vector3 position)
+        GameObject SpawnRandomTile(Vector3 position)
+        {
+            int randomIndex = Random.Range(0, tilePrefabs.Length);
+            return Instantiate(tilePrefabs[randomIndex], position, Quaternion.identity, transform);
+        }
+    GameObject SpawnRandomwaistTile(Vector3 position)
     {
         int randomIndex = Random.Range(0, tilePrefabs.Length);
-        return Instantiate(tilePrefabs[randomIndex], position, Quaternion.identity, transform);
+        return Instantiate(waisttilePrefabs[randomIndex], position, Quaternion.identity, transform);
+    }
+    GameObject SpawnRandommaxTile(Vector3 position)
+    {
+        int randomIndex = Random.Range(0, tilePrefabs.Length);
+        return Instantiate(maxtilePrefabs[randomIndex], position, Quaternion.identity, transform);
     }
 }
