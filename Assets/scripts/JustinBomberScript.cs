@@ -18,19 +18,15 @@ public class JustinBomberScript : MonoBehaviour
         if (rb != null)
         {
             float targetY = transform.position.y;
-
             if (player2 != null)
                 targetY = player2.position.y;
-
-            float homingSpeed = speed * homingStrength;
-            float newY = Mathf.MoveTowards(
+                float homingSpeed = speed * homingStrength;
+                float newY = Mathf.MoveTowards(
                 transform.position.y,
                 targetY,
                 homingSpeed * Time.fixedDeltaTime
             );
-
             float vy = (newY - transform.position.y) / Time.fixedDeltaTime;
-
             rb.linearVelocity = new Vector3(-speed, vy, 0f);
         }
         else
@@ -47,7 +43,6 @@ public class JustinBomberScript : MonoBehaviour
                     homingSpeed * Time.fixedDeltaTime
                 );
             }
-
             transform.position = pos;
         }
     }
