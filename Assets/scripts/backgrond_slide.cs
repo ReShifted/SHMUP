@@ -67,7 +67,7 @@ public class backgrond_slide : MonoBehaviour
         initialTileCount += 1;
         for (int i = 1; i < initialTileCount; i++)
         {
-            Vector3 spawnPos = new Vector3((spawnX + i * tileWidth)-120f, 0f, 12.5f);
+            Vector3 spawnPos = new Vector3((spawnX + i * tileWidth)-120f, -5f, 12.5f);
             GameObject tile = SpawnRandomTile(spawnPos);
             activeTiles.Add(tile);
         }
@@ -93,7 +93,7 @@ public class backgrond_slide : MonoBehaviour
             Destroy(firstTile);
 
             GameObject lastTile = activeTiles[activeTiles.Count - 1];
-            Vector3 newSpawnPos = new Vector3(lastTile.transform.position.x + tileWidth, 0f, 12.5f);
+            Vector3 newSpawnPos = new Vector3(lastTile.transform.position.x + tileWidth, -5f, 12.5f);
 
             GameObject newTile = SpawnRandomTile(newSpawnPos);
             activeTiles.Add(newTile);
