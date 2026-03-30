@@ -51,6 +51,11 @@ MonoBehaviour:
   Enemy_Bomber: {fileID: 7707839987576129232, guid: c1897cfdd9b6de44fa2470ede4468e53, type: 3}
   AllEnemys: []
   wave: 0
+  spawnRate: 2
+  INITIAL_SPAWNRATE: 2
+  MIN_SPAWNRATE: 0.1
+  difficultyScale: 0.01
+  timer: 0
 --- !u!114 &693213236952110717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,4 +82,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead493964e5c0a0468b008b31e9ed506, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::soundmanager
-  PARRY: {fileID: 0}
+  parrySound: {fileID: 9052040444944976917, guid: c473fdd2bf127c3489b2a5de2c9c9780, type: 3}
