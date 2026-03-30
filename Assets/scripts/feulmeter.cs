@@ -5,7 +5,6 @@ using UnityEngine.UIElements;
 
 public class feulmeter : MonoBehaviour
 {
-
     public manager Manager;
     public float feul = 100;
     public float timer = 1f;
