@@ -5,7 +5,7 @@ public class bosshomingbullet : MonoBehaviour
     public float speed = 0.01f;
     [SerializeField] private Transform player2;
     [Range(0f, 1f)] public float homingStrength = 0.05f;
-
+    [SerializeField] private Transform boss;
     private Rigidbody rb;
     private bool canHome = false;
 
@@ -13,7 +13,7 @@ public class bosshomingbullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
-
+        GameObject bossObj = GameObject.FindGameObjectWithTag("Boss");
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
         {

@@ -11,7 +11,7 @@ public class HelIJustinVersion : MonoBehaviour
 
     private float[] angles = { 10f, 5f, 0f, -5f, -10f };
     private float lastFireTime = 0f;
-
+    public feulmeter Feulmeter;
     public GameObject bulletheli;
     public float projectilespeed = 35f;
 
@@ -60,7 +60,9 @@ public class HelIJustinVersion : MonoBehaviour
 
         if (health <= 0f)
         {
+            Feulmeter.feulup();
             Destroy(gameObject);
+
         }
     }
 
