@@ -264,10 +264,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossChildShooting
   bossbullet: {fileID: 2270667893615970398, guid: 287bed696c8abb7418317dfd7ad19858, type: 3}
-  homingBullet: {fileID: 2270667893615970398, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
   shootCooldown: 2
   delayAfterParent: 0.5
-  homingCooldown: 4
 --- !u!1 &166072090
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,7 +298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01c8114f40dfbe4a8b4f0e9a6d299e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthCounterPLACEHOLDER
-  instance: {fileID: 0}
+  instance: {fileID: 166072091}
   healthtext: {fileID: 1951222134}
 --- !u!114 &166072092
 MonoBehaviour:
@@ -615,6 +613,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &388200731 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3781780567219304824, guid: fa2b7363857286c40b5570251d7364cb, type: 3}
+  m_PrefabInstance: {fileID: 709759619}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05e493ad2d008a4f86b3b840f9e4552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::manager
 --- !u!1 &547583477
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,10 +769,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossChildShooting
   bossbullet: {fileID: 2270667893615970398, guid: 287bed696c8abb7418317dfd7ad19858, type: 3}
-  homingBullet: {fileID: 2270667893615970398, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
   shootCooldown: 2
   delayAfterParent: 0.5
-  homingCooldown: 4
 --- !u!1001 &709759619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1207,63 +1214,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!1001 &1161445932
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2270667893615970398, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
-      propertyPath: m_Name
-      value: bosshomingbullet
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155558656678669358, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155558656678669358, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155558656678669358, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155558656678669358, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155558656678669358, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155558656678669358, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155558656678669358, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155558656678669358, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155558656678669358, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9155558656678669358, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
 --- !u!1 &1170489829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,10 +1358,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossChildShooting
   bossbullet: {fileID: 2270667893615970398, guid: 287bed696c8abb7418317dfd7ad19858, type: 3}
-  homingBullet: {fileID: 2270667893615970398, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
   shootCooldown: 2
   delayAfterParent: 0.5
-  homingCooldown: 4
 --- !u!1 &1193372423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,6 +1371,7 @@ GameObject:
   - component: {fileID: 1193372424}
   - component: {fileID: 1193372426}
   - component: {fileID: 1193372425}
+  - component: {fileID: 1193372427}
   m_Layer: 5
   m_Name: Image (2)
   m_TagString: Untagged
@@ -1437,13 +1386,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193372423}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.17364825, w: 0.9848078}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 14, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1001260224}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -20}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1487,6 +1436,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193372423}
   m_CullTransparentMesh: 1
+--- !u!114 &1193372427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193372423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f1ac8d6558e2c46a0883db671b57df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::feulmeter
+  Manager: {fileID: 388200731}
+  feul: 100
+  timer: 1
+  currenttime: 0
+  feulrange: 1
 --- !u!1 &1274579764
 GameObject:
   m_ObjectHideFlags: 0
@@ -2038,10 +2004,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossChildShooting
   bossbullet: {fileID: 2270667893615970398, guid: 287bed696c8abb7418317dfd7ad19858, type: 3}
-  homingBullet: {fileID: 2270667893615970398, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
   shootCooldown: 2
   delayAfterParent: 0.5
-  homingCooldown: 4
 --- !u!1001 &1799435843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2424,10 +2388,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   bossbullet: {fileID: 2270667893615970398, guid: 287bed696c8abb7418317dfd7ad19858, type: 3}
-  homingBullet: {fileID: 2270667893615970398, guid: daaf1299347d6fa4e94842d2e0c1205b, type: 3}
   shootCooldown: 2
   delayAfterParent: 0.5
-  homingCooldown: 4
 --- !u!1 &1933103599
 GameObject:
   m_ObjectHideFlags: 0
@@ -2886,4 +2848,3 @@ SceneRoots:
   - {fileID: 1621197748}
   - {fileID: 171889145}
   - {fileID: 1523778723}
-  - {fileID: 1161445932}

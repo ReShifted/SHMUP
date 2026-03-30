@@ -1,3 +1,37 @@
+//using System.Buffers;
+//using System.Collections.Generic;
+//using UnityEngine;
+
+//public class backgrond_slide : MonoBehaviour
+//{
+//    public GameObject[] tiles; // Array of tile GameObjects to slide
+//    private List<Vector3> alltiles = new List<Vector3>();
+//    // Start is called once before the first execution of Update after the MonoBehaviour is created
+//    void Start()
+//    {
+        
+//    }
+//    private void Awake()
+//    {
+//        // Initialize the tiles array with the child GameObjects of this GameObject
+//        tiles = new GameObject[transform.childCount];
+//        for (int i = 1; i < 4; i++)
+//        {
+//            int h = Random.Range(0, tiles.Length);
+//            if (tiles[h] != null)
+//            {
+//                Instantiate(tiles[h],);
+//                alltiles.Add(tiles[h].transform.position);
+//            }
+//        }
+//    }
+
+//    // Update is called once per frame
+//    void Update()
+//    {
+        
+//    }
+//}
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -68,7 +102,7 @@ public class backgrond_slide : MonoBehaviour
                 activeTiles.Add(newTile);
             }
             else if (Time.deltaTime < 90f)
-            {   
+            {
                 GameObject newTile = SpawnRandomwaistTile(newSpawnPos);
                 activeTiles.Add(newTile);
             }
