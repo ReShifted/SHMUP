@@ -779,6 +779,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6984437151077997995, guid: fa2b7363857286c40b5570251d7364cb, type: 3}
+      propertyPath: parrySound
+      value: 
+      objectReference: {fileID: 9052040444944976917, guid: c473fdd2bf127c3489b2a5de2c9c9780, type: 3}
+    - target: {fileID: 693213236952110717, guid: fa2b7363857286c40b5570251d7364cb, type: 3}
+      propertyPath: healthtext
+      value: 
+      objectReference: {fileID: 1951222134}
     - target: {fileID: 2105964617987911210, guid: fa2b7363857286c40b5570251d7364cb, type: 3}
       propertyPath: m_Name
       value: manager
@@ -1452,6 +1460,7 @@ MonoBehaviour:
   feul: 100
   timer: 1
   currenttime: 0
+  feulgain: 0
   feulrange: 1
 --- !u!1 &1274579764
 GameObject:

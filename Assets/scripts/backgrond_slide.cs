@@ -33,6 +33,7 @@
 //    }
 //}
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class backgrond_slide : MonoBehaviour
@@ -43,15 +44,13 @@ public class backgrond_slide : MonoBehaviour
     public GameObject[] maxtilePrefabs;
     public int initialTileCount = 5;
     public float tileWidth = 10f;      // Width of one tile
-
     [Header("Movement")]
     public float moveSpeed = 2f;
-
     [Header("Despawn / Spawn")]
     public float leftDespawnX = -200f;  // If tile goes past this, remove it
     public float spawnX = 15f;         // New tile spawns here on the right
-
     private List<GameObject> activeTiles = new List<GameObject>();
+    public float timed=Time.deltaTime;
 
     void Start()
     {
@@ -60,6 +59,7 @@ public class backgrond_slide : MonoBehaviour
 
     void Update()
     {
+        timed=timed+Time.deltaTime;
         MoveTiles();
         CheckTiles();
     }
@@ -96,12 +96,12 @@ public class backgrond_slide : MonoBehaviour
 
             GameObject lastTile = activeTiles[activeTiles.Count - 1];
             Vector3 newSpawnPos = new Vector3(lastTile.transform.position.x + tileWidth, -5f, 12.5f);
-            if (Time.deltaTime < 45f)
+            if (timed < 25f)
             {
                 GameObject newTile = SpawnRandomTile(newSpawnPos);
                 activeTiles.Add(newTile);
             }
-            else if (Time.deltaTime < 90f)
+            else if (timed < 70f)
             {
                 GameObject newTile = SpawnRandomwaistTile(newSpawnPos);
                 activeTiles.Add(newTile);
