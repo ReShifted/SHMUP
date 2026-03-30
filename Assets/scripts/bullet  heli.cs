@@ -18,6 +18,8 @@ public class bulletheli : MonoBehaviour
 
         transform.rotation = bulletRotation;
         rb.linearVelocity = bulletRotation * Vector3.left;
+
+        // Timemanager = FindFirstObjectByType<manager>();
         Timemanager = FindAnyObjectByType<TimeManager>();
     }
 

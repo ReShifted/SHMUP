@@ -12,7 +12,7 @@ public class justinEyeBullet : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Timemanager = FindFirstObjectByType<TimeManager>();
 
-        rb.linearVelocity = new Vector3(-speed, -1f, 0);
+        rb.linearVelocity = new Vector3(-speed, 0, 0);
 
         Destroy(gameObject, 2f);
     }
