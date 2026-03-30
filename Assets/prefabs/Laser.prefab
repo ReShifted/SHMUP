@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6270012356825923208}
   - component: {fileID: 2583522495611436504}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -161,7 +161,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6698813708808090171}
   - component: {fileID: 4664805849832197973}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 5566315749647146608}
   - component: {fileID: 3789057212658309730}
   - component: {fileID: 1953070743579782323}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5148,9 +5148,9 @@ GameObject:
   - component: {fileID: 4921090115664920703}
   - component: {fileID: -4656077923291010205}
   - component: {fileID: 1843678102045554020}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
