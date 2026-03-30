@@ -96,12 +96,12 @@ public class backgrond_slide : MonoBehaviour
 
             GameObject lastTile = activeTiles[activeTiles.Count - 1];
             Vector3 newSpawnPos = new Vector3(lastTile.transform.position.x + tileWidth, -5f, 12.5f);
-            if (timed < 45f)
+            if (timed < 25f)
             {
                 GameObject newTile = SpawnRandomTile(newSpawnPos);
                 activeTiles.Add(newTile);
             }
-            else if (timed < 90f)
+            else if (timed < 70f)
             {
                 GameObject newTile = SpawnRandomwaistTile(newSpawnPos);
                 activeTiles.Add(newTile);
