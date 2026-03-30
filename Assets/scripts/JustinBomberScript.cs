@@ -75,5 +75,9 @@ public class JustinBomberScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if (collision.gameObject.CompareTag("PlayerBullet"))
+        {
+            speed += 2f;
+        }
     }
 }
