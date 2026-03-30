@@ -33,7 +33,7 @@ public class justinEyeBullet : MonoBehaviour
             Timemanager.DoSlowmotion();
 
             CancelInvoke(nameof(DestroySelf));
-            Invoke(nameof(DestroySelf), 4f);
+            Invoke(nameof(DestroySelf), 8f);
         }
         else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
         {
