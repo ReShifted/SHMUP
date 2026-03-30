@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7576435492744476151}
   m_Layer: 0
   m_Name: bosshomingbullet
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,3 +153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a369a8394a8a44e96c49b57496a0e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  speed: 15
+  player2: {fileID: 0}
+  homingStrength: 0.8
