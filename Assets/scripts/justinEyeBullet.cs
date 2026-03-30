@@ -1,18 +1,20 @@
 using UnityEngine;
 
+
 public class justinEyeBullet : MonoBehaviour
 {
     public TimeManager Timemanager;
+    public soundmanager Soundmanager;
     private Rigidbody rb;
     private float speed = 8f;
-    [SerializeField] public AudioClip parrySound;
+    [SerializeField] public AudioClip parrysound;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         Timemanager = FindFirstObjectByType<TimeManager>();
 
-        rb.linearVelocity = new Vector3(-speed, -1f, 0);
+        rb.linearVelocity = new Vector3(-speed, 0, 0);
 
         Destroy(gameObject, 2f);
     }
@@ -28,15 +30,16 @@ public class justinEyeBullet : MonoBehaviour
         {
             this.tag = "PlayerBullet";
             rb.linearVelocity = -rb.linearVelocity * 2f;
-            soundmanager.instance.PlayParrySound(parrySound,transform);
+            soundmanager.instance.PlayParrySound(parrysound, transform);
             Timemanager.DoSlowmotion();
             CancelInvoke(nameof(DestroySelf));
             Invoke(nameof(DestroySelf), 4f);
         }
+
         else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
         {
             rb.linearVelocity = rb.linearVelocity * 2f;
-            soundmanager.instance.PlayParrySound(parrySound, transform);
+            soundmanager.instance.PlayParrySound(parrysound, transform);
         }
 
         if (other.CompareTag("Player"))

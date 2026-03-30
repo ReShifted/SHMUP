@@ -74,7 +74,7 @@ public class HelIJustinVersion : MonoBehaviour
                 Quaternion rotation = Quaternion.Euler(0, 0, angle);
 
                 GameObject bullet = Instantiate(bulletheli, transform.position, rotation);
-                bullet.transform.rotation = rotation;
+
                 Rigidbody rb = bullet.GetComponent<Rigidbody>();
                 if (rb != null)
                 {
