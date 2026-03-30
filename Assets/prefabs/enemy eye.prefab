@@ -159,7 +159,7 @@ MonoBehaviour:
   resumeTime: 7
   speed: 3
   health: 100
-  bulleteye: {fileID: 3150388727338499519, guid: 4116636f5c01144469003b455d0b3f25, type: 3}
+  bulleteye: {fileID: 7141730799202875986, guid: 03fbb7655cbe0284c8c00d059ac21921, type: 3}
   projectilespeed: 35
 --- !u!1001 &1278489990451774570
 PrefabInstance:
