@@ -4,15 +4,25 @@ public class JustinHeliBullet : MonoBehaviour
 {
     public TimeManager Timemanager;
     private Rigidbody rb;
-    private float speed = 1f;
+
     [SerializeField] public AudioClip parrySound;
+    public float projectilespeed = 35f;
+    public float destroyTime = 4f;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         Timemanager = FindFirstObjectByType<TimeManager>();
-        rb.linearVelocity = new Vector3(-speed, 0, 0);
-        Invoke(nameof(DestroySelf), 4f); 
+
+        if (rb.linearVelocity.magnitude == 0)
+        {
+            rb.linearVelocity = Vector3.left * projectilespeed;
+        }
+
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        Invoke(nameof(DestroySelf), destroyTime);
     }
+
     private void DestroySelf()
     {
         Destroy(gameObject);
@@ -23,17 +33,23 @@ public class JustinHeliBullet : MonoBehaviour
         if (other.CompareTag("PARRYIT") && this.CompareTag("EnemyBullet"))
         {
             this.tag = "PlayerBullet";
+
             CancelInvoke(nameof(DestroySelf));
-            Invoke(nameof(DestroySelf), 4f);
+            Invoke(nameof(DestroySelf), destroyTime);
+
             rb.linearVelocity = -rb.linearVelocity * 2f;
+
             Timemanager.DoSlowmotion();
             soundmanager.instance.PlayParrySound(parrySound, transform);
         }
         else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
         {
-            rb.linearVelocity = rb.linearVelocity * 2f;
-            //   soundmanager.instance.PlaySound("parry");
+            rb.linearVelocity *= 2f;
             soundmanager.instance.PlayParrySound(parrySound, transform);
+        }
+        if (other.transform.root.CompareTag("Player"))
+        {
+            Destroy(gameObject);
         }
     }
 }

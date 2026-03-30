@@ -12,6 +12,7 @@ public class bosshomingbullet : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
 
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
@@ -20,7 +21,6 @@ public class bosshomingbullet : MonoBehaviour
         }
 
         Invoke(nameof(EnableHoming), 1f);
-
         Destroy(gameObject, 3f);
     }
 
@@ -49,9 +49,9 @@ public class bosshomingbullet : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
         }

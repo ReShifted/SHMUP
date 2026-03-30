@@ -2,20 +2,21 @@ using UnityEngine;
 
 public class bossbullet : MonoBehaviour
 {
-        public float speed = 10f;
-        private Rigidbody rb;
+    public float speed = 10f;
+    private Rigidbody rb;
 
-        void Start()
-        {
-            rb = GetComponent<Rigidbody>();
-            rb.linearVelocity = transform.right * speed;
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+        rb.linearVelocity = transform.right * speed;
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
 
         Destroy(gameObject, 3f);
-        }
+    }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
         }
