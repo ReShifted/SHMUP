@@ -10,6 +10,7 @@ public class feulmeter : MonoBehaviour
     public float feul = 100;
     public float timer = 1f;
     public float currenttime = 0f;
+    public float feulgain = 0f;
 
     // replace the Range field
     public float feulrange = 1f; // normalized 0..1
@@ -24,7 +25,6 @@ public class feulmeter : MonoBehaviour
     void Update()
     {
         feuldown();
-        // update normalized value and x scale every frame
         feulrange = Mathf.Clamp01(feul / 100f);
         transform.localScale = new Vector3(feulrange, transform.localScale.y, transform.localScale.z);
     }
@@ -43,7 +43,8 @@ public class feulmeter : MonoBehaviour
     }
     public void feulup()
     {
-        feul += 50f;
+        feul += 10f;
+        feulgain += 10f;
         if (feul > 100f)
         {
             feul = 100f;

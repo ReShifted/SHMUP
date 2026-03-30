@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8484583571167163334}
   - component: {fileID: 6148836816111690429}
   - component: {fileID: 1279210919851797744}
-  - component: {fileID: 3156198315400082923}
-  - component: {fileID: 5914319665759953528}
-  - component: {fileID: 5636758870037011090}
+  - component: {fileID: -3535014802777836215}
+  - component: {fileID: 2242471127140135248}
+  - component: {fileID: -41859609951541455}
   m_Layer: 6
   m_Name: bomber
   m_TagString: Enemy
@@ -31,8 +31,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0, z: 23}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7235385918541912334}
   m_Father: {fileID: 0}
@@ -94,8 +94,23 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3156198315400082923
-CapsuleCollider:
+--- !u!114 &-3535014802777836215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7707839987576129232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edcf6fb09a1f7bd4a89b418ce302418a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  speed: 2
+  player2: {fileID: 6297272116414861723, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
+  homingStrength: 0.7
+--- !u!65 &2242471127140135248
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107,17 +122,15 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 200
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.70264435
-  m_Height: 2.5101035
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.25505173, z: 0.20264435}
---- !u!54 &5914319665759953528
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &-41859609951541455
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,7 +149,7 @@ Rigidbody:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 200
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 0
@@ -144,20 +157,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &5636758870037011090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7707839987576129232}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ba3aa7ca34b5e84db44d790ce618fe8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::bomberenemy
-  health: 100
-  Manager: {fileID: 3781780567219304824, guid: fa2b7363857286c40b5570251d7364cb, type: 3}
 --- !u!1001 &7197869673444064997
 PrefabInstance:
   m_ObjectHideFlags: 0

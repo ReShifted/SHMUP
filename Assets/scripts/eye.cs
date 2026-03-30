@@ -13,18 +13,11 @@ public class eye : MonoBehaviour
     public float moveDuration = 5f;
     public float speed = 1f;
     public manager Manager;
-    public feulmeter Feulmeter;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (Feulmeter == null)
-        {
-            // Feulmeter = FindObjectOfType<feulmeter>();
-            // or
-            var img = GameObject.Find("Canvas/Image (1)/Image (2)");
-            if (img != null) Feulmeter = img.GetComponent<feulmeter>();
-        }
         Eyerb = GetComponent<Rigidbody>();
         startX = transform.position.x;
         timer = 0f;
@@ -57,7 +50,6 @@ public class eye : MonoBehaviour
             health -= 10f;
             if (health <= 0f)
             {
-                Feulmeter.feulup();
                 Manager.AllEnemys.Remove(gameObject);
                 Destroy(gameObject);
             }

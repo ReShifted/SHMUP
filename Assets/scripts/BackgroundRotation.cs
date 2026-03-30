@@ -5,7 +5,6 @@ using System.Collections.Generic;
 public class PrefabSettings
 {
     public GameObject prefab;
-
     [Header("Per-Prefab Fixes")]
     public Vector3 rotationOffset;
     public float scaleMultiplier = 1f;
