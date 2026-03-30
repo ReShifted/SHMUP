@@ -300,7 +300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e01c8114f40dfbe4a8b4f0e9a6d299e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthCounterPLACEHOLDER
-  instance: {fileID: 0}
   healthtext: {fileID: 1951222134}
 --- !u!114 &166072092
 MonoBehaviour:
@@ -448,7 +447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: tilePrefabs.Array.size
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: 'tilePrefabs.Array.data[0]'
@@ -465,11 +464,19 @@ PrefabInstance:
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: 'tilePrefabs.Array.data[3]'
       value: 
-      objectReference: {fileID: 4413202308964940674, guid: 77da1c90573648c4ca4d6142eb03bf99, type: 3}
+      objectReference: {fileID: 4413202308964940674, guid: baa54391d39acea4e8e71710bffd93a0, type: 3}
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: 'tilePrefabs.Array.data[4]'
       value: 
-      objectReference: {fileID: 4413202308964940674, guid: 77da1c90573648c4ca4d6142eb03bf99, type: 3}
+      objectReference: {fileID: 4413202308964940674, guid: f96eae40953a91e48941ad51ad21c9f9, type: 3}
+    - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
+      propertyPath: 'tilePrefabs.Array.data[5]'
+      value: 
+      objectReference: {fileID: 4413202308964940674, guid: f96eae40953a91e48941ad51ad21c9f9, type: 3}
+    - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
+      propertyPath: 'tilePrefabs.Array.data[6]'
+      value: 
+      objectReference: {fileID: 4413202308964940674, guid: baa54391d39acea4e8e71710bffd93a0, type: 3}
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: waisttilePrefabs.Array.size
       value: 3
@@ -865,8 +872,8 @@ Transform:
   m_GameObject: {fileID: 576571432}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.1674, y: 0.32627, z: 39.3}
-  m_LocalScale: {x: 6.6169863, y: 4.844265, z: 4.4930987}
+  m_LocalPosition: {x: -5.1674, y: 7.5, z: 39.3}
+  m_LocalScale: {x: 6.6169863, y: 2.3962157, z: 4.4930987}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1105,6 +1112,14 @@ PrefabInstance:
     - target: {fileID: 6985905241265125709, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
       propertyPath: m_Name
       value: Player2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407756584351679464, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
+      propertyPath: maxHP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407756584351679464, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
+      propertyPath: currentHP
+      value: 1e+11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2047,7 +2062,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621197743}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
