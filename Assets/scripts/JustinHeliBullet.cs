@@ -6,12 +6,19 @@ public class JustinHeliBullet : MonoBehaviour
     private Rigidbody rb;
     private float speed = 1f;
     [SerializeField] public AudioClip parrySound;
+    public Quaternion bulletRotation;
     void Start()
     {
+        bulletRotation = Quaternion.identity;
+        bulletRotation = Quaternion.Euler(new Vector3(0,0,0));
+
         rb = GetComponent<Rigidbody>();
         Timemanager = FindFirstObjectByType<TimeManager>();
-        rb.linearVelocity = new Vector3(-speed, 0, 0);
-        Invoke(nameof(DestroySelf), 4f); 
+        rb.linearVelocity = new Vector3(-speed,0, 0);
+        rb.linearVelocity = bulletRotation * Vector3.left * speed;
+        Invoke(nameof(DestroySelf), 4f);
+
+       /// rb.linearVelocity = bulletRotation * Vector3.left
     }
     private void DestroySelf()
     {
