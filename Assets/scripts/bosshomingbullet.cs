@@ -5,14 +5,15 @@ public class bosshomingbullet : MonoBehaviour
     public float speed = 0.01f;
     [SerializeField] private Transform player2;
     [Range(0f, 1f)] public float homingStrength = 0.05f;
-
+    [SerializeField] private Transform boss;
     private Rigidbody rb;
     private bool canHome = false;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+        GameObject bossObj = GameObject.FindGameObjectWithTag("Boss");
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
         {
@@ -20,7 +21,6 @@ public class bosshomingbullet : MonoBehaviour
         }
 
         Invoke(nameof(EnableHoming), 1f);
-
         Destroy(gameObject, 3f);
     }
 
@@ -49,9 +49,9 @@ public class bosshomingbullet : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
             Destroy(gameObject);
         }
