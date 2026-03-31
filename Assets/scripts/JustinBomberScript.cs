@@ -5,7 +5,7 @@ public class JustinBomberScript : MonoBehaviour
     public float speed = 5f;
     [SerializeField] private Transform player2;
     [Range(0f, 1f)] public float homingStrength = 0.3f;
-
+    public feulmeter Feulmeter;
     private Rigidbody rb;
 
     void Awake()
@@ -70,8 +70,12 @@ public class JustinBomberScript : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player") ||
-            collision.gameObject.CompareTag("EnemyKiller"))
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Feulmeter.feulup();
+            Destroy(gameObject);
+        }
+            else if (collision.gameObject.CompareTag("EnemyKiller"))
         {
             Destroy(gameObject);
         }
