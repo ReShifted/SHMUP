@@ -11,7 +11,7 @@ public class HelIJustinVersion : MonoBehaviour
 
     private float[] angles = { 10f, 5f, 0f, -5f, -10f };
     private float lastFireTime = 0f;
-
+    public feulmeter Feulmeter;
     public GameObject bulletheli;
     public float projectilespeed = 35f;
 
@@ -19,6 +19,7 @@ public class HelIJustinVersion : MonoBehaviour
     {
         timer += Time.deltaTime;
 
+        // Movement logic
         if (timer < moveDuration || timer >= resumeTime)
         {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
@@ -59,7 +60,9 @@ public class HelIJustinVersion : MonoBehaviour
 
         if (health <= 0f)
         {
+            Feulmeter.feulup();
             Destroy(gameObject);
+
         }
     }
 
@@ -71,14 +74,14 @@ public class HelIJustinVersion : MonoBehaviour
 
             foreach (float angle in angles)
             {
-                Quaternion rotation = Quaternion.Euler(0, 0, angle);
+                Quaternion rotation = transform.rotation * Quaternion.Euler(0, 0, angle);
 
                 GameObject bullet = Instantiate(bulletheli, transform.position, rotation);
 
                 Rigidbody rb = bullet.GetComponent<Rigidbody>();
                 if (rb != null)
                 {
-                    rb.linearVelocity = rotation * Vector3.left * projectilespeed;
+                    rb.linearVelocity = -bullet.transform.right * projectilespeed;
                 }
             }
         }

@@ -52,9 +52,13 @@ MonoBehaviour:
   - {fileID: 4413202308964940674, guid: 7aaa32fcee849c74aba831ac58c23641, type: 3}
   - {fileID: 4413202308964940674, guid: 495d26748377b544da34a1421788800a, type: 3}
   - {fileID: 4413202308964940674, guid: d635204aa199f834d91e49c8079cea8e, type: 3}
-  maxtilePrefabs: []
+  maxtilePrefabs:
+  - {fileID: 4413202308964940674, guid: 7d7f487dc3ea9554a8a0a8b09f6fe3bf, type: 3}
+  - {fileID: 4413202308964940674, guid: 793b699cce7989a438ea00b35d0f5a5e, type: 3}
+  - {fileID: 4413202308964940674, guid: 578952ddb94ca8045a24569ebdf9113b, type: 3}
   initialTileCount: 5
   tileWidth: 25
   moveSpeed: 5
   leftDespawnX: -30
   spawnX: 15
+  timed: 0

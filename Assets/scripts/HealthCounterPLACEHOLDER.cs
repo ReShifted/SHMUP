@@ -3,7 +3,7 @@ using TMPro;
 
 public class HealthCounterPLACEHOLDER : MonoBehaviour
 {
-    public HealthCounterPLACEHOLDER instance;
+    public static HealthCounterPLACEHOLDER instance;
     public TextMeshProUGUI healthtext;
 
     void Awake()

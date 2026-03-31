@@ -8,7 +8,7 @@ public class eyeEnemyJustinVer : MonoBehaviour
     public float speed = 3f;
 
     public float health = 100f;
-
+    public feulmeter Feulmeter;
     private float FireCooldown = 0.5f;
     public GameObject bulleteye;
     public float projectilespeed = 6f;
@@ -56,6 +56,7 @@ public class eyeEnemyJustinVer : MonoBehaviour
 
         if (health <= 0f)
         {
+            Feulmeter.feulup();
             Destroy(gameObject);
         }
     }
