@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/belgie.unity
     guid: 3488237ffaeb28649bf26f6f2fdfcdcd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main scene.unity
     guid: 4c524dc52a2fb8140b9aa7d112b650a1
+  - enabled: 1
+    path: Assets/Scenes/maintestbuild.unity
+    guid: b6299e05c665923439fdb0395507525f
   - enabled: 1
     path: Assets/Scenes/restartscreen.unity
     guid: 8418647a2162fc04c9b9612ccfd8ffcb

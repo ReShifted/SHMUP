@@ -14,7 +14,7 @@ public class JustinBomberScript : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-
+        Feulmeter = FindFirstObjectByType<feulmeter>();
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
         {
