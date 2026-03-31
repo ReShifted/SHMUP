@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8834557273473927122}
   - component: {fileID: 3665450731376734349}
   - component: {fileID: -3854323689359815012}
-  - component: {fileID: -4863364856959672149}
+  - component: {fileID: -8668188714852682632}
   m_Layer: 6
   m_Name: 'heli '
   m_TagString: Enemy
@@ -163,7 +163,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-4863364856959672149
+--- !u!114 &-8668188714852682632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -175,9 +175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0307910f31f1fc04f99c2e8f8f5e2d53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyDamageIndicator
-  renderer: {fileID: 3052936536555888422}
   flashcolor: {r: 1, g: 1, b: 1, a: 1}
-  flashduration: 0.1
+  flashduration: 0.05
 --- !u!1001 &7061250339733053988
 PrefabInstance:
   m_ObjectHideFlags: 0
