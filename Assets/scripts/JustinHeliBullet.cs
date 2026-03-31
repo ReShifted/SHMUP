@@ -32,6 +32,8 @@ public class JustinHeliBullet : MonoBehaviour
     {
         if (other.CompareTag("PARRYIT") && this.CompareTag("EnemyBullet"))
         {
+            int playerBulletLayer = LayerMask.NameToLayer("PlayerBullet");
+            gameObject.layer = playerBulletLayer;
             this.tag = "PlayerBullet";
 
             CancelInvoke(nameof(DestroySelf));
@@ -47,8 +49,12 @@ public class JustinHeliBullet : MonoBehaviour
             rb.linearVelocity *= 2f;
             soundmanager.instance.PlayParrySound(parrySound, transform);
         }
-        if (other.transform.root.CompareTag("Player"))
+        if (other.transform.root.CompareTag("Player")&& this.CompareTag("EnemyBullet"))
         {
+            Destroy(gameObject);
+        } else if(other.transform.root.CompareTag("Enemy")&&this.CompareTag("PlayerBullet")) 
+        {
+
             Destroy(gameObject);
         }
     }
