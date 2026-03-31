@@ -48,6 +48,8 @@ MonoBehaviour:
   - {fileID: 4413202308964940674, guid: 77da1c90573648c4ca4d6142eb03bf99, type: 3}
   - {fileID: 4413202308964940674, guid: 19b4f2ad75b136248a1f3f366f51107d, type: 3}
   - {fileID: 4413202308964940674, guid: f96eae40953a91e48941ad51ad21c9f9, type: 3}
+  - {fileID: 4413202308964940674, guid: 6788c00fc95cf224ca15c65c2f4b0cf0, type: 3}
+  - {fileID: 4413202308964940674, guid: baa54391d39acea4e8e71710bffd93a0, type: 3}
   waisttilePrefabs:
   - {fileID: 4413202308964940674, guid: 7aaa32fcee849c74aba831ac58c23641, type: 3}
   - {fileID: 4413202308964940674, guid: 495d26748377b544da34a1421788800a, type: 3}
@@ -61,4 +63,5 @@ MonoBehaviour:
   moveSpeed: 5
   leftDespawnX: -30
   spawnX: 15
+  activeTiles: []
   timed: 0
