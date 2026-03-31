@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 993396723102953634}
   - component: {fileID: 8155416455667104410}
   - component: {fileID: 7273136136853713239}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4848,9 +4848,9 @@ GameObject:
   - component: {fileID: -7460430380848878488}
   - component: {fileID: -7513615028329085577}
   - component: {fileID: -4523458573572461162}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RocketPrefab
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4999,6 +4999,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c2ac8c773f1d5db4480691526dd1b813, type: 3}
       propertyPath: m_Name
       value: Rocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c2ac8c773f1d5db4480691526dd1b813, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

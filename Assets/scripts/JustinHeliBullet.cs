@@ -35,6 +35,7 @@ public class JustinHeliBullet : MonoBehaviour
             int playerBulletLayer = LayerMask.NameToLayer("PlayerBullet");
             gameObject.layer = playerBulletLayer;
             this.tag = "PlayerBullet";
+            transform.Rotate(0f, 0f, 180f);
 
             CancelInvoke(nameof(DestroySelf));
             Invoke(nameof(DestroySelf), destroyTime);
