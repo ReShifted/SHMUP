@@ -28,6 +28,7 @@ public class justinEyeBullet : MonoBehaviour
         {
             this.tag = "PlayerBullet";
             rb.linearVelocity = -rb.linearVelocity * 2f;
+            transform.Rotate(0f, 0f, 180f);
 
             soundmanager.instance.PlayParrySound(parrySound, transform);
             Timemanager.DoSlowmotion();
