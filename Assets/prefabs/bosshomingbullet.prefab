@@ -154,5 +154,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   speed: 15
-  player2: {fileID: 0}
+  player2: {fileID: 6297272116414861723, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
   homingStrength: 0.8
+  boss: {fileID: 9155558656678669358}
