@@ -1,14 +1,16 @@
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class playerHP : MonoBehaviour
 {
-    public float maxHP = 100;
-    public float currentHP = 100;
+    public float maxHP = 500;
+    public float currentHP = 500;
+    [SerializeField] public HealthBar healthBar;
 
     void Start()
     {
-        HealthCounterPLACEHOLDER.instance.healthCounter(currentHP);
+          healthBar= FindAnyObjectByType<HealthBar>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -16,12 +18,9 @@ public class playerHP : MonoBehaviour
         if (other.gameObject.CompareTag("EnemyBullet"))
         {
             currentHP -= 10;
-
-            HealthCounterPLACEHOLDER.instance.healthCounter(currentHP);
-
+            healthBar.HealthDown();
             if (currentHP <= 0)
             {
-                Debug.Log("Player has died.");
                 SceneManager.LoadScene("restartscreen");
             }
         }

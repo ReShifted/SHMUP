@@ -62,7 +62,7 @@ public class HelIJustinVersion : MonoBehaviour
         {
             
             Destroy(gameObject);
-Feulmeter.feulup();
+            Feulmeter.feulup();
         }
     }
 
