@@ -48,7 +48,7 @@ public class eyeEnemyJustinVer : MonoBehaviour
     {
         if (other.CompareTag("PlayerBullet"))
         {
-            TakeDamage(10f);
+            TakeDamage(20f);
         }
 
         if (other.CompareTag("EnemyKiller"))

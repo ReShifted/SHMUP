@@ -111,7 +111,7 @@ MonoBehaviour:
   player2: {fileID: 6297272116414861723, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
   homingStrength: 0.49
   Feulmeter: {fileID: 0}
-  health: 70
+  health: 150
 --- !u!65 &2242471127140135248
 BoxCollider:
   m_ObjectHideFlags: 0

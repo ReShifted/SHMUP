@@ -48,7 +48,7 @@ MonoBehaviour:
   parryTHISSHIT: {fileID: 7463858230536549969, guid: bee1b6cdd63a32d43960f86503dcf523, type: 3}
   shieldfireCooldown: 2
   spreadshotcooldown: 2
-  bulletFireRate: 0.1
+  bulletFireRate: 0.25
 --- !u!1 &6985905241265125709
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,6 +140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::playerHP
   maxHP: 500
   currentHP: 500
+  healthBar: {fileID: 0}
 --- !u!65 &7621935250130799466
 BoxCollider:
   m_ObjectHideFlags: 0
