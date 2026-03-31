@@ -13,6 +13,10 @@ public class eyeEnemyJustinVer : MonoBehaviour
     public GameObject bulleteye;
     public float projectilespeed = 6f;
 
+    void Start()
+    {
+        Feulmeter = FindFirstObjectByType<feulmeter>();
+    }
     void Update()
     {
         timer += Time.deltaTime;

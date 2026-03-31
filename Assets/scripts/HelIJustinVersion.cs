@@ -15,6 +15,10 @@ public class HelIJustinVersion : MonoBehaviour
     public GameObject bulletheli;
     public float projectilespeed = 35f;
 
+    void Start()
+    {
+        Feulmeter = FindFirstObjectByType<feulmeter>();
+    }
     void Update()
     {
         timer += Time.deltaTime;
