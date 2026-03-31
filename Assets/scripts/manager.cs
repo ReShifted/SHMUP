@@ -37,7 +37,7 @@ public class manager : MonoBehaviour
     void Update()
     {
         HasMissingEntries();
-        //newwave();
+        
 
         spawncheck = Random.Range(0, Time.deltaTime/100);
         if (spawncheck > spawncheck / 2) 

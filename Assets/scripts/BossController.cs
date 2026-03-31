@@ -40,6 +40,7 @@ public class BossController : MonoBehaviour
         {
             Quaternion rotation = Quaternion.Euler(0, 0, angle);
             Instantiate(bossbullet, position, rotation);
+          
         }
     }
 }
