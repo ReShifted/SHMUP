@@ -56,8 +56,8 @@ public class eyeEnemyJustinVer : MonoBehaviour
 
         if (health <= 0f)
         {
-            Feulmeter.feulup();
             Destroy(gameObject);
+            Feulmeter.feulup();
         }
     }
 

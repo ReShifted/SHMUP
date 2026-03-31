@@ -60,9 +60,9 @@ public class HelIJustinVersion : MonoBehaviour
 
         if (health <= 0f)
         {
-            Feulmeter.feulup();
+            
             Destroy(gameObject);
-
+Feulmeter.feulup();
         }
     }
 

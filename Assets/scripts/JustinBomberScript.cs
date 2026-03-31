@@ -7,6 +7,7 @@ public class JustinBomberScript : MonoBehaviour
     [Range(0f, 1f)] public float homingStrength = 0.3f;
     public feulmeter Feulmeter;
     private Rigidbody rb;
+    public float health = 100f;
 
     void Awake()
     {
@@ -67,16 +68,47 @@ public class JustinBomberScript : MonoBehaviour
             transform.position = pos;
         }
     }
+    private void Update()
+    {
+        if (health <= 0f)
+        {
+            
+            Destroy(gameObject);
+            Feulmeter.feulup();
+        }
+    }
 
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Feulmeter.feulup();
+            //Feulmeter.feulup();
             Destroy(gameObject);
         }
             else if (collision.gameObject.CompareTag("EnemyKiller"))
         {
+            Destroy(gameObject);
+        }
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("PlayerBullet"))
+        {
+            TakeDamage(10f);
+        }
+
+        if (other.CompareTag("EnemyKiller"))
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void TakeDamage(float damage)
+    {
+        health -= damage;
+
+        if (health <= 0f)
+        {
+            Feulmeter.feulup();
             Destroy(gameObject);
         }
     }

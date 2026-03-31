@@ -138,9 +138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a7b9fc5c04ce99409dc435e1e86e429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerHP
-  maxHP: 100
-  currentHP: 100
-  HEalthCounter: {fileID: 0}
+  maxHP: 500
+  currentHP: 500
 --- !u!65 &7621935250130799466
 BoxCollider:
   m_ObjectHideFlags: 0
