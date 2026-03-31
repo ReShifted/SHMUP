@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class bomberenemy : MonoBehaviour
 {
-    public float health = 100f;
+    public float health = 200f;
     public manager Manager;
 
     // Update is called once per frame
