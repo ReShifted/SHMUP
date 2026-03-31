@@ -140,7 +140,7 @@ MonoBehaviour:
   speed: 3
   health: 100
   Feulmeter: {fileID: 0}
-  bulletheli: {fileID: 5662219992552703168, guid: aa15efd8024a8ce4f998ce9684758a24, type: 3}
+  bulletheli: {fileID: 8594406182417404724, guid: d228620613a903c46878eed44e687181, type: 3}
   projectilespeed: 10
 --- !u!65 &-3854323689359815012
 BoxCollider:
