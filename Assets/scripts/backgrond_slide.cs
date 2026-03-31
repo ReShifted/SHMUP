@@ -57,36 +57,43 @@ public class backgrond_slide : MonoBehaviour
         }
     }
 
+
     void CheckTiles()
     {
         if (activeTiles.Count == 0) return;
 
         GameObject firstTile = activeTiles[0];
 
-        if (firstTile.transform.position.x <= leftDespawnX || activeTiles.Count<initialTileCount)
+        if (firstTile.transform.position.x <= leftDespawnX)
         {
-            activeTiles.RemoveAt(0);
-            Destroy(firstTile);
-
-            GameObject lastTile = activeTiles[activeTiles.Count-1];
+            GameObject lastTile = activeTiles[activeTiles.Count - 1];
             Vector3 newSpawnPos = new Vector3(lastTile.transform.position.x + tileWidth, -5f, 12.5f);
+
+            GameObject newTile;
+
             if (timed < 25f)
             {
-                GameObject newTile = SpawnRandomTile(newSpawnPos);
-                activeTiles.Add(newTile);
+                newTile = SpawnRandomTile(newSpawnPos);
             }
             else if (timed < 70f)
             {
-                GameObject newTile = SpawnRandomwaistTile(newSpawnPos);
-                activeTiles.Add(newTile);
+                newTile = SpawnRandomwaistTile(newSpawnPos);
             }
-            else if(timed >= 70f)
+            else
             {
-                GameObject newTile = SpawnRandommaxTile(newSpawnPos);
+                newTile = SpawnRandommaxTile(newSpawnPos);
+            }
+
+            if (newTile != null)
+            {
                 activeTiles.Add(newTile);
             }
+
+            activeTiles.RemoveAt(0);
+            Destroy(firstTile);
         }
     }
+
     //private void addtilemax()
     //{
     //    GameObject lastTile = activeTiles[activeTiles.Count];
@@ -107,19 +114,37 @@ public class backgrond_slide : MonoBehaviour
     //        activeTiles.Add(newTile);
     //    }
     //}
+
+    //GameObject SpawnRandomTile(Vector3 position)
+    //    {
+    //        int randomIndex = Random.Range(1, tilePrefabs.Length);
+    //        return Instantiate(tilePrefabs[randomIndex], position, Quaternion.identity, transform);
+    //    }
+    //GameObject SpawnRandomwaistTile(Vector3 position)
+    //{
+    //    int randomIndex = Random.Range(1, tilePrefabs.Length);
+    //    return Instantiate(waisttilePrefabs[randomIndex], position, Quaternion.identity, transform);
+    //}
+    //GameObject SpawnRandommaxTile(Vector3 position)
+    //{
+    //    int randomIndex = Random.Range(1, tilePrefabs.Length);
+    //    return Instantiate(maxtilePrefabs[randomIndex], position, Quaternion.identity, transform);
+    //}
     GameObject SpawnRandomTile(Vector3 position)
-        {
-            int randomIndex = Random.Range(1, tilePrefabs.Length);
-            return Instantiate(tilePrefabs[randomIndex], position, Quaternion.identity, transform);
-        }
+    {
+        int randomIndex = Random.Range(0, tilePrefabs.Length);
+        return Instantiate(tilePrefabs[randomIndex], position, Quaternion.identity, transform);
+    }
+
     GameObject SpawnRandomwaistTile(Vector3 position)
     {
-        int randomIndex = Random.Range(1, tilePrefabs.Length);
+        int randomIndex = Random.Range(0, waisttilePrefabs.Length);
         return Instantiate(waisttilePrefabs[randomIndex], position, Quaternion.identity, transform);
     }
+
     GameObject SpawnRandommaxTile(Vector3 position)
     {
-        int randomIndex = Random.Range(1, tilePrefabs.Length);
+        int randomIndex = Random.Range(0, maxtilePrefabs.Length);
         return Instantiate(maxtilePrefabs[randomIndex], position, Quaternion.identity, transform);
     }
 }
