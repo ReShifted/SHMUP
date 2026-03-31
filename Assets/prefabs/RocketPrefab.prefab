@@ -4845,6 +4845,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5610412310167572284}
+  - component: {fileID: -7460430380848878488}
+  - component: {fileID: -7513615028329085577}
+  - component: {fileID: -4523458573572461162}
   m_Layer: 0
   m_Name: RocketPrefab
   m_TagString: Untagged
@@ -4869,6 +4872,70 @@ Transform:
   - {fileID: 993396723102953634}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-7460430380848878488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8594406182417404724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67fa4d2b91345b544aa3ea5bb453b89a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  Timemanager: {fileID: 5196071613704050863, guid: 1f1d38a9d00269248869e61a8735889a, type: 3}
+  parrySound: {fileID: 8300000, guid: be19a30f166afbc4ab1a18240e06ab3f, type: 3}
+  projectilespeed: 35
+  destroyTime: 4
+--- !u!135 &-7513615028329085577
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8594406182417404724}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &-4523458573572461162
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8594406182417404724}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!1001 &4605657339561329919
 PrefabInstance:
   m_ObjectHideFlags: 0
