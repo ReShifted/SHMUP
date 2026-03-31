@@ -13,6 +13,13 @@ public class eyeEnemyJustinVer : MonoBehaviour
     public GameObject bulleteye;
     public float projectilespeed = 6f;
 
+    private EnemyDamageIndicator damageIndicator;
+
+    void Start()
+    {
+        damageIndicator = GetComponent<EnemyDamageIndicator>();
+    }
+
     void Update()
     {
         timer += Time.deltaTime;
@@ -53,6 +60,9 @@ public class eyeEnemyJustinVer : MonoBehaviour
     private void TakeDamage(float damage)
     {
         health -= damage;
+
+        if (damageIndicator != null)
+            damageIndicator.Flash();
 
         if (health <= 0f)
         {

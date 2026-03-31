@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -3535014802777836215}
   - component: {fileID: 2242471127140135248}
   - component: {fileID: -41859609951541455}
+  - component: {fileID: -2580064640248152005}
   m_Layer: 6
   m_Name: bomber
   m_TagString: Enemy
@@ -106,11 +107,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edcf6fb09a1f7bd4a89b418ce302418a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  speed: 2
+  speed: 8
   player2: {fileID: 6297272116414861723, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
-  homingStrength: 0.122
+  homingStrength: 0.49
   Feulmeter: {fileID: 0}
-  health: 100
+  health: 70
 --- !u!65 &2242471127140135248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -159,6 +160,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &-2580064640248152005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7707839987576129232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0307910f31f1fc04f99c2e8f8f5e2d53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyDamageIndicator
+  flashcolor: {r: 1, g: 1, b: 1, a: 1}
+  flashduration: 0.05
 --- !u!1001 &7197869673444064997
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -9,6 +9,8 @@ public class JustinBomberScript : MonoBehaviour
     private Rigidbody rb;
     public float health = 100f;
 
+    private EnemyDamageIndicator damageIndicator;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -18,6 +20,8 @@ public class JustinBomberScript : MonoBehaviour
         {
             player2 = playerObj.transform;
         }
+
+        damageIndicator = GetComponent<EnemyDamageIndicator>();
     }
 
     void FixedUpdate()
@@ -68,11 +72,11 @@ public class JustinBomberScript : MonoBehaviour
             transform.position = pos;
         }
     }
+
     private void Update()
     {
         if (health <= 0f)
         {
-            
             Destroy(gameObject);
             Feulmeter.feulup();
         }
@@ -82,14 +86,14 @@ public class JustinBomberScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //Feulmeter.feulup();
             Destroy(gameObject);
         }
-            else if (collision.gameObject.CompareTag("EnemyKiller"))
+        else if (collision.gameObject.CompareTag("EnemyKiller"))
         {
             Destroy(gameObject);
         }
     }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PlayerBullet"))
@@ -102,9 +106,13 @@ public class JustinBomberScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     private void TakeDamage(float damage)
     {
         health -= damage;
+
+        if (damageIndicator != null)
+            damageIndicator.Flash();
 
         if (health <= 0f)
         {

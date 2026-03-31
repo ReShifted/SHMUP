@@ -13,7 +13,7 @@ public class playershoot : MonoBehaviour
     private float LastBulletFireTime = 0f;
     public float bulletFireRate = 0.1f;
 
-    private float[] angles = {15f,0f,-15f};
+    private float[] angles = {30f,15f,0f,-15f,-30f};
 
     void Start()
     {

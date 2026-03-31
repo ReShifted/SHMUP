@@ -15,6 +15,13 @@ public class HelIJustinVersion : MonoBehaviour
     public GameObject bulletheli;
     public float projectilespeed = 35f;
 
+    private EnemyDamageIndicator damageIndicator;
+
+    void Start()
+    {
+        damageIndicator = GetComponent<EnemyDamageIndicator>();
+    }
+
     void Update()
     {
         timer += Time.deltaTime;
@@ -58,11 +65,15 @@ public class HelIJustinVersion : MonoBehaviour
     {
         health -= damage;
 
+        if (damageIndicator != null)
+        {
+            damageIndicator.Flash();
+        }
+
         if (health <= 0f)
         {
-            
             Destroy(gameObject);
-Feulmeter.feulup();
+            Feulmeter.feulup();
         }
     }
 
