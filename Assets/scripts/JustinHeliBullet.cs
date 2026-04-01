@@ -8,7 +8,6 @@ public class JustinHeliBullet : MonoBehaviour
     [SerializeField] public AudioClip parrySound;
     public float projectilespeed = 35f;
     public float destroyTime = 4f;
-
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -44,6 +43,7 @@ public class JustinHeliBullet : MonoBehaviour
 
             Timemanager.DoSlowmotion();
             soundmanager.instance.PlayParrySound(parrySound, transform);
+
         }
         else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
         {

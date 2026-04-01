@@ -11,6 +11,7 @@ public class feulmeter : MonoBehaviour
     public float currenttime = 0f;
     public float feulgain = 0f;
 
+
     // replace the Range field
     public float feulrange = 1f; // normalized 0..1
 
@@ -48,5 +49,6 @@ public class feulmeter : MonoBehaviour
         {
             feul = 100f;
         }
+        ScoreCounter.instance.scoreCounter(feulgain);
     }
 }
