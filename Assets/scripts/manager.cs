@@ -26,12 +26,14 @@ public class manager : MonoBehaviour
     public bool stopspawns = false;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentSpawnRate = INITIAL_SPAWNRATE;
         newwave();
+<<<<<<< HEAD
         NextLevel=Time.deltaTime;
+=======
+>>>>>>> 7f2e97d6eb02b30dc0749da55de9b6266f876ffb
         roundStart = Time.time;
     }
 
@@ -40,17 +42,19 @@ public class manager : MonoBehaviour
     {
         NextLevel = NextLevel+Time.deltaTime;
         HasMissingEntries();
+<<<<<<< HEAD
         if (NextLevel>=135f)
         {
             stopspawns=true;
         }
 
+=======
+>>>>>>> 7f2e97d6eb02b30dc0749da55de9b6266f876ffb
         spawncheck = Random.Range(0, Time.deltaTime/100);
         if (spawncheck > spawncheck / 2) 
         { 
             Spawn = true; 
         }
-
         currentSpawnRate = INITIAL_SPAWNRATE - ((Time.time - roundStart) * difficultyScale);
         currentSpawnRate = Mathf.Max(currentSpawnRate, MIN_SPAWNRATE);
 
