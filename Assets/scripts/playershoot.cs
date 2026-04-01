@@ -38,7 +38,7 @@ public class playershoot : MonoBehaviour
         // Spread shot with Q key
         if (Input.GetKeyDown(KeyCode.Q) && Time.time >= extraSpreadshotCooldown + spreadshotcooldown)
         {
-            shieldlastFireTime = Time.time;
+            extraSpreadshotCooldown = Time.time;
             foreach (float angle in angles)
             {
                 Quaternion rotation = Quaternion.Euler(0, 0, angle);
