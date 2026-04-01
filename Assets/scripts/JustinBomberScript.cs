@@ -23,7 +23,10 @@ public class JustinBomberScript : MonoBehaviour
 
         damageIndicator = GetComponent<EnemyDamageIndicator>();
     }
-
+    public void Start()
+    {
+        Destroy(this, 10f); 
+    }
     void FixedUpdate()
     {
         if (player2 == null)
