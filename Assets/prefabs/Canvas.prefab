@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 3885161980159069997}
   - component: {fileID: 4975725621245506579}
   - component: {fileID: 7628482409540022052}
+  - component: {fileID: 8996739715274062866}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -255,6 +256,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8996739715274062866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 583494094842273642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 241a7caf84271fa468249ebd4bf57b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScoreCounter
+  scoretext: {fileID: 7628482409540022052}
 --- !u!1 &3318440599989688721
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +705,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86f1ac8d6558e2c46a0883db671b57df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::feulmeter
+  scorecounter: {fileID: 0}
   Manager: {fileID: 3781780567219304824, guid: fa2b7363857286c40b5570251d7364cb, type: 3}
   feul: 100
   timer: 1
