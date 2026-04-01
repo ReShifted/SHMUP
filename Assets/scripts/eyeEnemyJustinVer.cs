@@ -33,7 +33,6 @@ public class eyeEnemyJustinVer : MonoBehaviour
             transform.Translate(Vector3.left * speed * Time.deltaTime);
         }
         shootBullet();
-                UpandDown();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -89,9 +88,5 @@ public class eyeEnemyJustinVer : MonoBehaviour
             }
             FireCooldown = Time.time + 2f;
         }
-    }
-
-    void UpandDown() {         float newY = Mathf.Sin(Time.time * 2f) * 0.5f;
-        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
 }

@@ -4,12 +4,12 @@ using TMPro;
 public class ScoreCounter : MonoBehaviour
 {
 
-    //public static ScoreCounter instance;
+    public static ScoreCounter instance;
     public TextMeshProUGUI scoretext;
 
     void Start()
     {
-        //instance = this;
+        instance = this;
     }
 
     void Update()
@@ -19,7 +19,7 @@ public class ScoreCounter : MonoBehaviour
 
     public void scoreCounter(float feulgain)
     {
-        Debug.Log(feulgain);
+      //whenever the player collects feul, the score will increase by 10 points
         scoretext.text = "Score: " + feulgain;
     }
 

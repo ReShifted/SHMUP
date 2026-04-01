@@ -36,7 +36,6 @@ public class HelIJustinVersion : MonoBehaviour
         }
 
         HeliSpreadShot();
-            UpandDown();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -100,11 +99,5 @@ public class HelIJustinVersion : MonoBehaviour
                 }
             }
         }
-    }
-
-    void UpandDown()
-    {
-               float newY = Mathf.Sin(timer) * 0.5f;
-        transform.position = new Vector3(transform.position.x, newY, transform.position.z);
     }
 }
