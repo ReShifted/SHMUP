@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class manager : MonoBehaviour
 {
@@ -21,30 +22,39 @@ public class manager : MonoBehaviour
     private float currentSpawnRate;
     private float roundStart = 0;
     public float timer = 0;
+    public float NextLevel;
+    public bool stopspawns = false;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentSpawnRate = INITIAL_SPAWNRATE;
         newwave();
-
-
+<<<<<<< HEAD
+        NextLevel=Time.deltaTime;
+=======
+>>>>>>> 7f2e97d6eb02b30dc0749da55de9b6266f876ffb
         roundStart = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
+        NextLevel = NextLevel+Time.deltaTime;
         HasMissingEntries();
-        
+<<<<<<< HEAD
+        if (NextLevel>=135f)
+        {
+            stopspawns=true;
+        }
 
+=======
+>>>>>>> 7f2e97d6eb02b30dc0749da55de9b6266f876ffb
         spawncheck = Random.Range(0, Time.deltaTime/100);
         if (spawncheck > spawncheck / 2) 
         { 
             Spawn = true; 
         }
-
         currentSpawnRate = INITIAL_SPAWNRATE - ((Time.time - roundStart) * difficultyScale);
         currentSpawnRate = Mathf.Max(currentSpawnRate, MIN_SPAWNRATE);
 
@@ -56,6 +66,11 @@ public class manager : MonoBehaviour
         {
             newwave();
             timer = 0;
+        }
+
+        if (NextLevel>=135f&&AllEnemys.Count<1)
+        {
+            SceneManager.LoadScene("Bobbie");
         }
     }
 
@@ -77,7 +92,7 @@ public class manager : MonoBehaviour
     }
     public void newwave()
     {
-        if (Spawn == true)
+        if (Spawn == true&&stopspawns==false)
         {
             spawn = Random.Range(0, 3);
             if (spawn == 0)

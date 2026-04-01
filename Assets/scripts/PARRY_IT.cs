@@ -2,17 +2,22 @@ using UnityEngine;
 
 public class PARRY_IT : MonoBehaviour
 {
+    public GameObject prefabToSpawn;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Range(0f, 1f)]
+    public float spawnChance = 0.01f;
+
     void Start()
     {
-        
+        TrySpawn();
+        Destroy(gameObject, 0.2f);
     }
 
-    // Update is called once per frame
-    void Update()
+    void TrySpawn()
     {
-        Destroy(gameObject,0.2f);
-
+        if (Random.value <= spawnChance)
+        {
+            Instantiate(prefabToSpawn, transform.position, Quaternion.identity);    
+        }
     }
 }
