@@ -5234,4 +5234,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Timemanager: {fileID: 5196071613704050863, guid: 1f1d38a9d00269248869e61a8735889a, type: 3}
-  parrySound: {fileID: 0}
+  parrySound: {fileID: 8300000, guid: be19a30f166afbc4ab1a18240e06ab3f, type: 3}
