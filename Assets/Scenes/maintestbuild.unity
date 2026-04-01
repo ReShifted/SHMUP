@@ -748,6 +748,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 7621935250130799466, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
+      propertyPath: m_Size.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621935250130799466, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
+      propertyPath: m_Size.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7621935250130799466, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
+      propertyPath: m_Size.z
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 8407756584351679464, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
       propertyPath: maxHP
       value: 500
