@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1130932680643610191}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.47, y: 0, z: -0}
+  m_LocalPosition: {x: 0.259, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -169,7 +169,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 4.08
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -287,7 +287,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.39
+      scalar: 0.92
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4846,7 +4846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5610412310167572284}
   - component: {fileID: -7460430380848878488}
-  - component: {fileID: -7513615028329085577}
+  - component: {fileID: 8638216212974164635}
   - component: {fileID: -4523458573572461162}
   m_Layer: 7
   m_Name: RocketPrefab
@@ -4888,8 +4888,8 @@ MonoBehaviour:
   parrySound: {fileID: 8300000, guid: be19a30f166afbc4ab1a18240e06ab3f, type: 3}
   projectilespeed: 35
   destroyTime: 4
---- !u!135 &-7513615028329085577
-SphereCollider:
+--- !u!65 &8638216212974164635
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4907,8 +4907,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.4245429, y: 0.17813426, z: 0.1683513}
+  m_Center: {x: 0.07125783, y: 0, z: 0}
 --- !u!54 &-4523458573572461162
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4946,15 +4946,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2ac8c773f1d5db4480691526dd1b813, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.15
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2ac8c773f1d5db4480691526dd1b813, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.15
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2ac8c773f1d5db4480691526dd1b813, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.15
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2ac8c773f1d5db4480691526dd1b813, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4995,6 +4995,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c2ac8c773f1d5db4480691526dd1b813, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2ac8c773f1d5db4480691526dd1b813, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c2ac8c773f1d5db4480691526dd1b813, type: 3}
       propertyPath: m_Name

@@ -10,7 +10,6 @@ public class playermovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-
     void FixedUpdate()
     {
         float inputUpward = Input.GetKey(KeyCode.W) ? 2f : 0f;
