@@ -13,9 +13,6 @@ public class manager : MonoBehaviour
     private bool Spawn=false;
     private int spawn;
     public float spawnRate = 2;
-
-
-
     public float INITIAL_SPAWNRATE = 2f;
     public float MIN_SPAWNRATE = 0.1f;
     public float difficultyScale = 0.01f;
