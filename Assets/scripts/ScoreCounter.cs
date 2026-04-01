@@ -4,12 +4,12 @@ using TMPro;
 public class ScoreCounter : MonoBehaviour
 {
 
-    public static ScoreCounter instance;
+    //public static ScoreCounter instance;
     public TextMeshProUGUI scoretext;
 
     void Start()
     {
-        instance = this;
+        //instance = this;
     }
 
     void Update()
