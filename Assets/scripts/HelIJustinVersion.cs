@@ -17,6 +17,10 @@ public class HelIJustinVersion : MonoBehaviour
 
     private EnemyDamageIndicator damageIndicator;
 
+    private void Awake()
+    {
+        Feulmeter = FindFirstObjectByType<feulmeter>();
+    }
     void Start()
     {
         damageIndicator = GetComponent<EnemyDamageIndicator>();

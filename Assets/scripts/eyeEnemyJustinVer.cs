@@ -62,8 +62,9 @@ public class eyeEnemyJustinVer : MonoBehaviour
         health -= damage;
 
         if (damageIndicator != null)
+        {
             damageIndicator.Flash();
-
+        }
         if (health <= 0f)
         {
             Destroy(gameObject);
