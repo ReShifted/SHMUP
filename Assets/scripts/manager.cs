@@ -23,13 +23,10 @@ public class manager : MonoBehaviour
     public float timer = 0;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentSpawnRate = INITIAL_SPAWNRATE;
         newwave();
-
-
         roundStart = Time.time;
     }
 
@@ -37,14 +34,11 @@ public class manager : MonoBehaviour
     void Update()
     {
         HasMissingEntries();
-        
-
         spawncheck = Random.Range(0, Time.deltaTime/100);
         if (spawncheck > spawncheck / 2) 
         { 
             Spawn = true; 
         }
-
         currentSpawnRate = INITIAL_SPAWNRATE - ((Time.time - roundStart) * difficultyScale);
         currentSpawnRate = Mathf.Max(currentSpawnRate, MIN_SPAWNRATE);
 
