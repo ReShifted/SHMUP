@@ -57,7 +57,6 @@ public class backgrond_slide : MonoBehaviour
         }
     }
 
-
     void CheckTiles()
     {
         if (activeTiles.Count == 0) return;
