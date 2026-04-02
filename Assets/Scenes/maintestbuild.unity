@@ -181,7 +181,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: tilePrefabs.Array.size
-      value: 4
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
+      propertyPath: maxtilePrefabs.Array.size
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: 'tilePrefabs.Array.data[0]'
@@ -202,7 +206,7 @@ PrefabInstance:
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: 'tilePrefabs.Array.data[4]'
       value: 
-      objectReference: {fileID: 4413202308964940674, guid: f96eae40953a91e48941ad51ad21c9f9, type: 3}
+      objectReference: {fileID: 4413202308964940674, guid: 6788c00fc95cf224ca15c65c2f4b0cf0, type: 3}
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: 'tilePrefabs.Array.data[5]'
       value: 
@@ -213,8 +217,24 @@ PrefabInstance:
       objectReference: {fileID: 4413202308964940674, guid: baa54391d39acea4e8e71710bffd93a0, type: 3}
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: waisttilePrefabs.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
+      propertyPath: 'maxtilePrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 4413202308964940674, guid: 578952ddb94ca8045a24569ebdf9113b, type: 3}
+    - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
+      propertyPath: 'maxtilePrefabs.Array.data[2]'
+      value: 
+      objectReference: {fileID: 4413202308964940674, guid: 386a007eccae3bb468a7e809d43f4c58, type: 3}
+    - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
+      propertyPath: 'maxtilePrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 4413202308964940674, guid: 793b699cce7989a438ea00b35d0f5a5e, type: 3}
+    - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
+      propertyPath: 'maxtilePrefabs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 4413202308964940674, guid: d567a691a10728c4987328c212f50af5, type: 3}
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: 'waisttilePrefabs.Array.data[0]'
       value: 
@@ -222,11 +242,19 @@ PrefabInstance:
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: 'waisttilePrefabs.Array.data[1]'
       value: 
-      objectReference: {fileID: 4413202308964940674, guid: 495d26748377b544da34a1421788800a, type: 3}
+      objectReference: {fileID: 4413202308964940674, guid: d635204aa199f834d91e49c8079cea8e, type: 3}
     - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
       propertyPath: 'waisttilePrefabs.Array.data[2]'
       value: 
-      objectReference: {fileID: 4413202308964940674, guid: d635204aa199f834d91e49c8079cea8e, type: 3}
+      objectReference: {fileID: 4413202308964940674, guid: 495d26748377b544da34a1421788800a, type: 3}
+    - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
+      propertyPath: 'waisttilePrefabs.Array.data[3]'
+      value: 
+      objectReference: {fileID: 4413202308964940674, guid: 1b6c65415607e2d4ebf69cd658e5b0fe, type: 3}
+    - target: {fileID: 7977342533825426253, guid: bffd2692c50f7ca41b78e93cf2c8e3eb, type: 3}
+      propertyPath: 'waisttilePrefabs.Array.data[4]'
+      value: 
+      objectReference: {fileID: 4413202308964940674, guid: cc7d573ef56ef264abd1b32daa5123da, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -949,13 +977,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009152335}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.6768221, y: -0.60327214, z: 0.39979267, w: -0.13468598}
-  m_LocalPosition: {x: 0.49, y: 2.74, z: -2.88}
+  m_LocalRotation: {x: 0.52657545, y: -0.6439783, z: 0.5294678, w: -0.16635549}
+  m_LocalPosition: {x: 0.49, y: 7.13, z: -2.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 17.461, y: -227.533, z: -104.314}
+  m_LocalEulerAnglesHint: {x: 30.447, y: -243.551, z: -97.682}
 --- !u!114 &1009152338
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1755,10 +1783,10 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 0
+  m_Antialiasing: 3
   m_AntialiasingQuality: 2
-  m_StopNaN: 0
-  m_Dithering: 0
+  m_StopNaN: 1
+  m_Dithering: 1
   m_ClearDepth: 1
   m_AllowXRRendering: 1
   m_AllowHDROutput: 1
