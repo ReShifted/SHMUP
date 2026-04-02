@@ -153,7 +153,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a369a8394a8a44e96c49b57496a0e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  soundmanager: {fileID: 5858843317512567601, guid: 8cfcd17cc7d7bd844a4edf28a31ee744, type: 3}
   speed: 15
   player2: {fileID: 6297272116414861723, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
   homingStrength: 0.8
   boss: {fileID: 9155558656678669358}
+  parrySound: {fileID: 8300000, guid: be19a30f166afbc4ab1a18240e06ab3f, type: 3}
