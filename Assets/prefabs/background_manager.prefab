@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2763093550235339645}
   - component: {fileID: 7977342533825426253}
+  - component: {fileID: 996866573192477611}
   m_Layer: 0
   m_Name: background_manager
   m_TagString: Untagged
@@ -65,3 +66,25 @@ MonoBehaviour:
   spawnX: 15
   activeTiles: []
   timed: 0
+--- !u!64 &996866573192477611
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6951354414646039257}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
