@@ -87,7 +87,8 @@ public class bosshomingbullet : MonoBehaviour
             CancelInvoke(nameof(DestroySelf));
             Invoke(nameof(DestroySelf), 2f);
 
-            rb.linearVelocity = -rb.linearVelocity * 2f;
+            //rb.linearVelocity = -rb.linearVelocity * 2f;
+            speed = speed * -1;
 
             timeManager.DoSlowmotion();
             soundmanager.instance.PlayParrySound(parrySound, transform);

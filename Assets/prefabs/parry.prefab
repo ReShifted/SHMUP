@@ -126,4 +126,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PARRY_IT
   prefabToSpawn: {fileID: 2822803696431592915, guid: 246e99da1ff7b7143af450e4983c4311, type: 3}
-  spawnChance: 1
+  spawnChance: 0.477
