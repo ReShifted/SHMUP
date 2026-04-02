@@ -141,6 +141,7 @@ MonoBehaviour:
   maxHP: 500
   currentHP: 500
   healthBar: {fileID: 0}
+  effect: {fileID: 6318612056140090929, guid: 68ef8eee70f26434098c84826ca8e793, type: 3}
 --- !u!65 &7621935250130799466
 BoxCollider:
   m_ObjectHideFlags: 0

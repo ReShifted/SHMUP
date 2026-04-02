@@ -25,7 +25,7 @@ public class JustinBomberScript : MonoBehaviour
     }
     public void Start()
     {
-        Destroy(this, 10f); 
+        Destroy(this.gameObject, 10f); 
     }
     void FixedUpdate()
     {

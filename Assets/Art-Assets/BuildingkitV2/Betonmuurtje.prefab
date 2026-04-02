@@ -1,0 +1,1230 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7515250619006230036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9050184970324749237}
+  m_Layer: 0
+  m_Name: Betonmuurtje
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9050184970324749237
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7515250619006230036}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6951586776032613653}
+  - {fileID: 8847499680112636016}
+  - {fileID: 1014232630457444421}
+  - {fileID: 4648344018874341153}
+  - {fileID: 7036441595755208429}
+  - {fileID: 6186830169217805372}
+  - {fileID: 4294013795420776680}
+  - {fileID: 8692154282791288360}
+  - {fileID: 4157435779420145749}
+  - {fileID: 303007213135317124}
+  - {fileID: 3422380254372753343}
+  - {fileID: 5262833929172012653}
+  - {fileID: 6637365929360229406}
+  - {fileID: 6066268985936535838}
+  - {fileID: 4336482173299214092}
+  - {fileID: 5764116970050843839}
+  - {fileID: 2531125374762115681}
+  - {fileID: 6145619510644837731}
+  - {fileID: 7653215622134045066}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &269870769812713327
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.854
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &303007213135317124 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 269870769812713327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &691863608685744046
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.4007
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &1014232630457444421 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 691863608685744046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2642175246635959690
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.6560001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.498
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &2531125374762115681 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 2642175246635959690}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2950990012563294292
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.57430005
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.498
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &3422380254372753343 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 2950990012563294292}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4297840263594582247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.164
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &4336482173299214092 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 4297840263594582247}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4331864392163643139
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5467
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &4294013795420776680 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 4331864392163643139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4483496899905269694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0823
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &4157435779420145749 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 4483496899905269694}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5118487472076779722
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.121
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.498
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &4648344018874341153 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 5118487472076779722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5221071256741417812
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.9357
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &5764116970050843839 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 5221071256741417812}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5657628264262707590
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.756
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &5262833929172012653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 5657628264262707590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5933123343859895255
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.48899984
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.498
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &6186830169217805372 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 5933123343859895255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5963637953276111496
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.32570016
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &6145619510644837731 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 5963637953276111496}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6027240160054871797
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.535
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &6066268985936535838 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 6027240160054871797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6599480274125415413
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0356998
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.498
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &6637365929360229406 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 6599480274125415413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7362487247514958086
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.20929992
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.249
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &7036441595755208429 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 7362487247514958086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7490126276540723966
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &6951586776032613653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 7490126276540723966}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7908064150314057313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.046000242
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.498
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &7653215622134045066 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 7908064150314057313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9025806737797781403
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.629
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &8847499680112636016 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 9025806737797781403}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9163142134614153667
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9050184970324749237}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.071
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+      propertyPath: m_Name
+      value: Betonblok_1 (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+--- !u!4 &8692154282791288360 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 95d598d7ce5453f48a660fba036a10af, type: 3}
+  m_PrefabInstance: {fileID: 9163142134614153667}
+  m_PrefabAsset: {fileID: 0}
