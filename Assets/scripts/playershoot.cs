@@ -45,13 +45,15 @@ public class playershoot : MonoBehaviour
                 Instantiate(BulletPrefab, transform.position, rotation);
             }
         }
+
         //spawns bullet every 0.2 seconds
-        if(Time.time >= LastBulletFireTime + bulletFireRate)
+        if (Time.time >= LastBulletFireTime + bulletFireRate&& Input.GetKey(KeyCode.Space))
         {
             LastBulletFireTime = Time.time;
             Instantiate(BulletPrefab, transform.position, Quaternion.identity);
-        }
+        } 
     }
+    
 }
 
 
