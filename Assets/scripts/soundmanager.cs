@@ -20,11 +20,11 @@ public class soundmanager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
-    public void PlayParrySound(AudioClip audioclip,Transform spawntransform)
+    public void PlayParrySound(AudioClip audioclip, Transform spawntransform)
     {
-        if (audiosource != null && !audiosource.isPlaying)
+        if (audiosource == null || !audiosource.isPlaying)
         {
             // AudioSource.PlayClipAtPoint(PARRY, Camera.main.transform.position);
             audiosource = Instantiate(parrySound, spawntransform.position, Quaternion.identity);
