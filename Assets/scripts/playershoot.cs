@@ -29,14 +29,14 @@ public class playershoot : MonoBehaviour
         //}
 
         // parry with E key
-        if (Input.GetKeyDown(KeyCode.E)&& Time.time >= shieldlastFireTime + shieldfireCooldown)
+        if ((Input.GetKeyDown(KeyCode.E)&& Time.time >= shieldlastFireTime + shieldfireCooldown)|| Input.GetKeyDown(KeyCode.X) && Time.time >= shieldlastFireTime + shieldfireCooldown)
         {
             shieldlastFireTime = Time.time;
             Instantiate(parryTHISSHIT, transform.position, Quaternion.identity);
         }
 
         // Spread shot with Q key
-        if (Input.GetKeyDown(KeyCode.Q) && Time.time >= extraSpreadshotCooldown + spreadshotcooldown)
+        if ((Input.GetKeyDown(KeyCode.Q) && Time.time >= extraSpreadshotCooldown + spreadshotcooldown)|| Input.GetKeyDown(KeyCode.Z) && Time.time >= extraSpreadshotCooldown + spreadshotcooldown)
         {
             extraSpreadshotCooldown = Time.time;
             foreach (float angle in angles)
