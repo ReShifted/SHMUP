@@ -8,10 +8,21 @@ public class eyeEnemyJustinVer : MonoBehaviour
     public float speed = 3f;
 
     public float health = 100f;
-
+    public feulmeter Feulmeter;
     private float FireCooldown = 0.5f;
     public GameObject bulleteye;
     public float projectilespeed = 6f;
+
+    private EnemyDamageIndicator damageIndicator;
+
+    private void Awake()
+    {
+        Feulmeter = FindFirstObjectByType<feulmeter>();
+    }
+    void Start()
+    {
+        damageIndicator = GetComponent<EnemyDamageIndicator>();
+    }
 
     void Update()
     {
@@ -41,7 +52,7 @@ public class eyeEnemyJustinVer : MonoBehaviour
     {
         if (other.CompareTag("PlayerBullet"))
         {
-            TakeDamage(10f);
+            TakeDamage(20f);
         }
 
         if (other.CompareTag("EnemyKiller"))
@@ -54,9 +65,14 @@ public class eyeEnemyJustinVer : MonoBehaviour
     {
         health -= damage;
 
+        if (damageIndicator != null)
+        {
+            damageIndicator.Flash();
+        }
         if (health <= 0f)
         {
             Destroy(gameObject);
+            Feulmeter.feulup();
         }
     }
 

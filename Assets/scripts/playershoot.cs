@@ -11,9 +11,9 @@ public class playershoot : MonoBehaviour
     private float extraSpreadshotCooldown = 1f;
 
     private float LastBulletFireTime = 0f;
-    public float bulletFireRate = 0.1f;
+    public float bulletFireRate = 0.25f;
 
-    private float[] angles = {15f,0f,-15f};
+    private float[] angles = {30f,15f,0f,-15f,-30f};
 
     void Start()
     {
@@ -29,29 +29,31 @@ public class playershoot : MonoBehaviour
         //}
 
         // parry with E key
-        if (Input.GetKeyDown(KeyCode.E)&& Time.time >= shieldlastFireTime + shieldfireCooldown)
+        if ((Input.GetKeyDown(KeyCode.E)&& Time.time >= shieldlastFireTime + shieldfireCooldown)|| Input.GetKeyDown(KeyCode.X) && Time.time >= shieldlastFireTime + shieldfireCooldown)
         {
             shieldlastFireTime = Time.time;
             Instantiate(parryTHISSHIT, transform.position, Quaternion.identity);
         }
 
         // Spread shot with Q key
-        if (Input.GetKeyDown(KeyCode.Q) && Time.time >= extraSpreadshotCooldown + spreadshotcooldown)
+        if ((Input.GetKeyDown(KeyCode.Q) && Time.time >= extraSpreadshotCooldown + spreadshotcooldown)|| Input.GetKeyDown(KeyCode.Z) && Time.time >= extraSpreadshotCooldown + spreadshotcooldown)
         {
-            shieldlastFireTime = Time.time;
+            extraSpreadshotCooldown = Time.time;
             foreach (float angle in angles)
             {
                 Quaternion rotation = Quaternion.Euler(0, 0, angle);
                 Instantiate(BulletPrefab, transform.position, rotation);
             }
         }
+
         //spawns bullet every 0.2 seconds
-        if(Time.time >= LastBulletFireTime + bulletFireRate)
+        if (Time.time >= LastBulletFireTime + bulletFireRate&& Input.GetKey(KeyCode.Space))
         {
             LastBulletFireTime = Time.time;
             Instantiate(BulletPrefab, transform.position, Quaternion.identity);
-        }
+        } 
     }
+    
 }
 
 

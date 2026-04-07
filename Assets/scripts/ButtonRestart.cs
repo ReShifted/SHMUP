@@ -15,6 +15,7 @@ public class ButtonRestart : MonoBehaviour
     }
     public void restart()
     {
-        SceneManager.LoadScene("Main scene");
+        Debug.Log("restart");
+        SceneManager.LoadScene("maintestbuild");
     }
 }

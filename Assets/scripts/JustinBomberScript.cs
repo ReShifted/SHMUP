@@ -5,20 +5,28 @@ public class JustinBomberScript : MonoBehaviour
     public float speed = 5f;
     [SerializeField] private Transform player2;
     [Range(0f, 1f)] public float homingStrength = 0.3f;
-
+    public feulmeter Feulmeter;
     private Rigidbody rb;
+    public float health = 100f;
+
+    private EnemyDamageIndicator damageIndicator;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-
+        Feulmeter = FindFirstObjectByType<feulmeter>();
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
         {
             player2 = playerObj.transform;
         }
-    }
 
+        damageIndicator = GetComponent<EnemyDamageIndicator>();
+    }
+    public void Start()
+    {
+        Destroy(this.gameObject, 10f); 
+    }
     void FixedUpdate()
     {
         if (player2 == null)
@@ -68,11 +76,50 @@ public class JustinBomberScript : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (health <= 0f)
+        {
+            Destroy(gameObject);
+            Feulmeter.feulup();
+        }
+    }
+
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player") ||
-            collision.gameObject.CompareTag("EnemyKiller"))
+        if (collision.gameObject.CompareTag("Player"))
         {
+            Destroy(gameObject);
+        }
+        else if (collision.gameObject.CompareTag("EnemyKiller"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("PlayerBullet"))
+        {
+            TakeDamage(20f);
+        }
+
+        if (other.CompareTag("EnemyKiller"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void TakeDamage(float damage)
+    {
+        health -= damage;
+
+        if (damageIndicator != null)
+            damageIndicator.Flash();
+
+        if (health <= 0f)
+        {
+            Feulmeter.feulup();
             Destroy(gameObject);
         }
     }

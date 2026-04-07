@@ -5,12 +5,13 @@ using UnityEngine.UIElements;
 
 public class feulmeter : MonoBehaviour
 {
-
+    public ScoreCounter scorecounter;
     public manager Manager;
     public float feul = 100;
     public float timer = 1f;
     public float currenttime = 0f;
     public float feulgain = 0f;
+
 
     // replace the Range field
     public float feulrange = 1f; // normalized 0..1
@@ -18,7 +19,7 @@ public class feulmeter : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        scorecounter = FindFirstObjectByType<ScoreCounter>();
     }
 
     // Update is called once per frame
@@ -49,5 +50,7 @@ public class feulmeter : MonoBehaviour
         {
             feul = 100f;
         }
+        //ScoreCounter.instance.scoreCounter(feulgain);
+        scorecounter.scoreCounter(feulgain);
     }
 }

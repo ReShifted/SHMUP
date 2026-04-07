@@ -5,6 +5,7 @@ public class justinEyeBullet : MonoBehaviour
     public TimeManager Timemanager;
     private Rigidbody rb;
     private float speed = 8f;
+    public float destroyTime = 4f;
     [SerializeField] public AudioClip parrySound;
 
     void Start()
@@ -14,7 +15,7 @@ public class justinEyeBullet : MonoBehaviour
 
         rb.linearVelocity = new Vector3(-speed, 0, 0);
 
-        Destroy(gameObject, 2f);
+        Invoke(nameof(DestroySelf), 2f);
     }
 
     private void DestroySelf()
@@ -22,33 +23,61 @@ public class justinEyeBullet : MonoBehaviour
         Destroy(gameObject);
     }
 
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.CompareTag("PARRYIT") && this.CompareTag("EnemyBullet"))
+    //    {
+
+    //        rb.linearVelocity = -rb.linearVelocity * 2f;
+    //        this.tag = "PlayerBullet";
+    //        transform.Rotate(0f, 0f, 180f);
+
+    //        soundmanager.instance.PlayParrySound(parrySound, transform);
+    //        Timemanager.DoSlowmotion();
+
+    //        CancelInvoke(nameof(DestroySelf));
+    //        Invoke(nameof(DestroySelf), 8f);
+    //    }
+    //    else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
+    //    {
+    //        rb.linearVelocity *= 2f;
+    //        soundmanager.instance.PlayParrySound(parrySound, transform);
+    //    }
+
+    //    if (other.CompareTag("Player"))
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PARRYIT") && this.CompareTag("EnemyBullet"))
         {
+            int playerBulletLayer = LayerMask.NameToLayer("PlayerBullet");
+            gameObject.layer = playerBulletLayer;
             this.tag = "PlayerBullet";
-            rb.linearVelocity = -rb.linearVelocity * 2f;
-            soundmanager.instance.PlayParrySound(parrySound,transform);
-            Timemanager.DoSlowmotion();
+            transform.Rotate(0f, 0f, 180f);
+
             CancelInvoke(nameof(DestroySelf));
-            Invoke(nameof(DestroySelf), 4f);
+            Invoke(nameof(DestroySelf), destroyTime);
+
+            rb.linearVelocity = -rb.linearVelocity * 2f;
+
+            Timemanager.DoSlowmotion();
+            soundmanager.instance.PlayParrySound(parrySound, transform);
         }
         else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
         {
-            rb.linearVelocity = rb.linearVelocity * 2f;
+            rb.linearVelocity *= 2f;
             soundmanager.instance.PlayParrySound(parrySound, transform);
         }
-
-        if (other.CompareTag("Player"))
+        if (other.transform.root.CompareTag("Player") && this.CompareTag("EnemyBullet"))
         {
             Destroy(gameObject);
         }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        else if (other.transform.root.CompareTag("Enemy") && this.CompareTag("PlayerBullet"))
         {
+
             Destroy(gameObject);
         }
     }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class manager : MonoBehaviour
 {
@@ -8,20 +9,63 @@ public class manager : MonoBehaviour
     public GameObject Enemy_Bomber;
     [SerializeField] public List<GameObject> AllEnemys = new List<GameObject>();
     public int wave = 0;
-    private float spawn;
+    private float spawncheck;
+    private bool Spawn=false;
+    private int spawn;
+    public float spawnRate = 2;
+    public float INITIAL_SPAWNRATE = 2f;
+    public float MIN_SPAWNRATE = 0.1f;
+    public float difficultyScale = 0.01f;
+    private float currentSpawnRate;
+    private float roundStart = 0;
+    public float timer = 0;
+    public float NextLevel;
+    public bool stopspawns = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
+        currentSpawnRate = INITIAL_SPAWNRATE;
         newwave();
+
+        NextLevel=Time.deltaTime;
+
+        roundStart = Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
+        NextLevel = NextLevel+Time.deltaTime;
         HasMissingEntries();
-        newwave();
+        if (NextLevel>=135f)
+        {
+            stopspawns=true;
+        }
+        spawncheck = Random.Range(0, Time.deltaTime/100);
+        if (spawncheck > spawncheck / 2) 
+        { 
+            Spawn = true; 
+        }
+        currentSpawnRate = INITIAL_SPAWNRATE - ((Time.time - roundStart) * difficultyScale);
+        currentSpawnRate = Mathf.Max(currentSpawnRate, MIN_SPAWNRATE);
+
+        if (timer < spawnRate)
+        {
+            timer = timer + Time.deltaTime;
+        }
+        else
+        {
+            newwave();
+            timer = 0;
+        }
+
+        if (NextLevel>=135f&&AllEnemys.Count<1)
+        {
+            SceneManager.LoadScene("Bobbie");
+        }
     }
+
     
     public void SpawnEyeEnemy()
     {
@@ -40,27 +84,25 @@ public class manager : MonoBehaviour
     }
     public void newwave()
     {
-        if (AllEnemys.Count == 0)
+        if (Spawn == true&&stopspawns==false)
         {
-            wave += 1;
-            for (int i = 0; i < wave * 2 + 1; i++)
+            spawn = Random.Range(0, 3);
+            if (spawn == 0)
             {
-                spawn = Random.Range(0, 3);
-                if (spawn == 0)
-                {
-                    SpawnEyeEnemy();
-                }
-                else if (spawn == 1)
-                {
-                    SpawnHeliEnemy();
-                }
-                else
-                {
-                    SpawnBomberEnemy();
-                }
+                SpawnEyeEnemy();
             }
-        } }
-            public bool HasMissingEntries()
+            else if (spawn == 1)
+            {
+                SpawnHeliEnemy();
+            }
+            else
+            {
+                SpawnBomberEnemy();
+            }
+            Spawn = true;
+        }
+    }
+    public bool HasMissingEntries()
     {
         for (int i = 0; i < AllEnemys.Count; i++)
         {
@@ -73,13 +115,3 @@ public class manager : MonoBehaviour
         return false;
     }
 }
-
-    //public void DamagePlayer(playerHP player)
-    //{
-    //    if (player != null)
-    //    {
-    //        player.TakeDamage(damage);
-    //        Debug.Log("Player took " + damage + " damage!");
-    //    }
-    //}
-

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2763093550235339645}
   - component: {fileID: 7977342533825426253}
+  - component: {fileID: 996866573192477611}
   m_Layer: 0
   m_Name: background_manager
   m_TagString: Untagged
@@ -45,10 +46,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::backgrond_slide
   tilePrefabs:
-  - {fileID: 919132149155446097, guid: 60d1022c2b8862845944fc1ad2e8a048, type: 3}
-  - {fileID: 919132149155446097, guid: 60d1022c2b8862845944fc1ad2e8a048, type: 3}
+  - {fileID: 4413202308964940674, guid: 77da1c90573648c4ca4d6142eb03bf99, type: 3}
+  - {fileID: 4413202308964940674, guid: 19b4f2ad75b136248a1f3f366f51107d, type: 3}
+  - {fileID: 4413202308964940674, guid: f96eae40953a91e48941ad51ad21c9f9, type: 3}
+  - {fileID: 4413202308964940674, guid: 6788c00fc95cf224ca15c65c2f4b0cf0, type: 3}
+  - {fileID: 4413202308964940674, guid: baa54391d39acea4e8e71710bffd93a0, type: 3}
+  waisttilePrefabs:
+  - {fileID: 4413202308964940674, guid: 7aaa32fcee849c74aba831ac58c23641, type: 3}
+  - {fileID: 4413202308964940674, guid: 495d26748377b544da34a1421788800a, type: 3}
+  - {fileID: 4413202308964940674, guid: d635204aa199f834d91e49c8079cea8e, type: 3}
+  maxtilePrefabs:
+  - {fileID: 4413202308964940674, guid: 7d7f487dc3ea9554a8a0a8b09f6fe3bf, type: 3}
+  - {fileID: 4413202308964940674, guid: 793b699cce7989a438ea00b35d0f5a5e, type: 3}
+  - {fileID: 4413202308964940674, guid: 578952ddb94ca8045a24569ebdf9113b, type: 3}
   initialTileCount: 5
   tileWidth: 25
   moveSpeed: 5
   leftDespawnX: -30
   spawnX: 15
+  activeTiles: []
+  timed: 0
+--- !u!64 &996866573192477611
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6951354414646039257}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}

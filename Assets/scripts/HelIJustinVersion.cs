@@ -11,9 +11,20 @@ public class HelIJustinVersion : MonoBehaviour
 
     private float[] angles = { 10f, 5f, 0f, -5f, -10f };
     private float lastFireTime = 0f;
-
+    public feulmeter Feulmeter;
     public GameObject bulletheli;
     public float projectilespeed = 35f;
+
+    private EnemyDamageIndicator damageIndicator;
+
+    private void Awake()
+    {
+        Feulmeter = FindFirstObjectByType<feulmeter>();
+    }
+    void Start()
+    {
+        damageIndicator = GetComponent<EnemyDamageIndicator>();
+    }
 
     void Update()
     {
@@ -44,7 +55,7 @@ public class HelIJustinVersion : MonoBehaviour
     {
         if (other.CompareTag("PlayerBullet"))
         {
-            TakeDamage(10f);
+            TakeDamage(20f);
         }
 
         if (other.CompareTag("EnemyKiller"))
@@ -57,9 +68,15 @@ public class HelIJustinVersion : MonoBehaviour
     {
         health -= damage;
 
+        if (damageIndicator != null)
+        {
+            damageIndicator.Flash();
+        }
+
         if (health <= 0f)
         {
             Destroy(gameObject);
+            Feulmeter.feulup();
         }
     }
 
@@ -71,14 +88,14 @@ public class HelIJustinVersion : MonoBehaviour
 
             foreach (float angle in angles)
             {
-                Quaternion rotation = Quaternion.Euler(0, 0, angle);
+                Quaternion rotation = transform.rotation * Quaternion.Euler(0, 0, angle);
 
                 GameObject bullet = Instantiate(bulletheli, transform.position, rotation);
 
                 Rigidbody rb = bullet.GetComponent<Rigidbody>();
                 if (rb != null)
                 {
-                    rb.linearVelocity = rotation * Vector3.left * projectilespeed;
+                    rb.linearVelocity = -bullet.transform.right * projectilespeed;
                 }
             }
         }
