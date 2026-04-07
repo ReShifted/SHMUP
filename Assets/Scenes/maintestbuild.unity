@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 346105995}
   m_Layer: 6
   m_Name: Cube (3)
-  m_TagString: EnemyKiller
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -744,7 +744,7 @@ GameObject:
   - component: {fileID: 871449111}
   m_Layer: 6
   m_Name: Cube (4)
-  m_TagString: EnemyKiller
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1339,7 +1339,7 @@ GameObject:
   - component: {fileID: 1494251269}
   m_Layer: 6
   m_Name: Cube (6)
-  m_TagString: EnemyKiller
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
