@@ -6,7 +6,7 @@ public class EnemyDamageIndicator : MonoBehaviour
     private Renderer[] renderers;
     private Color[][] originalColors;
 
-    public Color flashcolor = Color.red; // use red so it's obvious
+    public Color flashcolor = Color.red; 
     public float flashduration = 0.05f;
 
     void Start()
@@ -16,14 +16,13 @@ public class EnemyDamageIndicator : MonoBehaviour
 
         for (int i = 0; i < renderers.Length; i++)
         {
-            // Make sure each renderer has its own material instance
             Material[] mats = renderers[i].materials;
 
             originalColors[i] = new Color[mats.Length];
 
             for (int j = 0; j < mats.Length; j++)
             {
-                mats[j] = new Material(mats[j]); // force instance
+                mats[j] = new Material(mats[j]);
                 originalColors[i][j] = mats[j].color;
             }
 
@@ -38,7 +37,6 @@ public class EnemyDamageIndicator : MonoBehaviour
 
     private IEnumerator DoFlash()
     {
-        // Apply flash color
         foreach (Renderer r in renderers)
         {
             foreach (Material mat in r.materials)
@@ -49,7 +47,6 @@ public class EnemyDamageIndicator : MonoBehaviour
 
         yield return new WaitForSeconds(flashduration);
 
-        // Restore original colors
         for (int i = 0; i < renderers.Length; i++)
         {
             Material[] mats = renderers[i].materials;
