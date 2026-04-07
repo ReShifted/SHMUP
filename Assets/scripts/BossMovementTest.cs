@@ -10,7 +10,6 @@ public class BossMovementTest : MonoBehaviour
     public float edgeThreshold = 2f;
     public float centerInfluence = 2f;
 
-    // Path history
     public List<Vector3> positionHistory = new List<Vector3>();
     public int maxHistory = 1000;
 
@@ -23,14 +22,12 @@ public class BossMovementTest : MonoBehaviour
     void Start()
     {
         centerPosition = transform.position;
-
         currentDirection = Random.insideUnitCircle.normalized;
         targetDirection = currentDirection;
     }
 
     void Update()
     {
-        // --- STORE POSITION HISTORY ---
         positionHistory.Insert(0, transform.position);
 
         if (positionHistory.Count > maxHistory)
@@ -38,7 +35,6 @@ public class BossMovementTest : MonoBehaviour
             positionHistory.RemoveAt(positionHistory.Count - 1);
         }
 
-        // --- MOVEMENT LOGIC ---
         timer += Time.deltaTime;
 
         if (timer >= changeDirectionTime)
@@ -63,5 +59,17 @@ public class BossMovementTest : MonoBehaviour
                            * moveSpeed * Time.deltaTime;
 
         transform.Translate(movement);
+
+        Vector3 offset = transform.position - centerPosition;
+        if (offset.magnitude > radius)
+        {
+            transform.position = centerPosition + offset.normalized * radius;
+        }
+
+        if (currentDirection != Vector2.zero)
+        {
+            float angle = Mathf.Atan2(currentDirection.y, currentDirection.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
+        }
     }
 }
