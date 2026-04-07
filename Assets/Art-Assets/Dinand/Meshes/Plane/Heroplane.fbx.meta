@@ -3,7 +3,47 @@ guid: f5f24035bb47c4f44904a5e3b5bba1fb
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bolt
+    second: {fileID: 2100000, guid: d6b8bbf82c597cd4883c21eeb5132e7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cable1
+    second: {fileID: 2100000, guid: 4d1ef7ad47516324fad5309e3e37be53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cable2
+    second: {fileID: 2100000, guid: d2aff137b67de8d4eb926436efb1040f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: af981e4bfeb9019498d108a71536210f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 1adeec00bb5aced49ab466975900b188, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlaneBoudy
+    second: {fileID: 2100000, guid: 2d6fa18348325a943ac8a4a9c6decf23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PlaneBoudy.002
+    second: {fileID: 2100000, guid: b7aa762434b656c40a828053b78bb8ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sheet
+    second: {fileID: 2100000, guid: b7534d8f50349f74bb055bff29e01b54, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

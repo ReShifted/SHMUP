@@ -68,7 +68,7 @@ MeshRenderer:
   m_SmallMeshCulling: 1
   m_ForceMeshLod: -1
   m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 128
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
@@ -111,7 +111,7 @@ MonoBehaviour:
   player2: {fileID: 6297272116414861723, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
   homingStrength: 0.49
   Feulmeter: {fileID: 0}
-  health: 150
+  health: 75
 --- !u!65 &2242471127140135248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -221,6 +221,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: e0a80591aaae7d746ba0d3ae3b0b99e3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e0a80591aaae7d746ba0d3ae3b0b99e3, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 129
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e0a80591aaae7d746ba0d3ae3b0b99e3, type: 3}
       propertyPath: m_Name
