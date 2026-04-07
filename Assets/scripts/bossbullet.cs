@@ -11,7 +11,7 @@ public class bossbullet : MonoBehaviour
         rb.linearVelocity = transform.right * speed;
         rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
 
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 2f);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -20,5 +20,11 @@ public class bossbullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    //bullet shrinks over time
+    void Update()
+    {
+        transform.localScale *= 0.98f;
     }
 }
