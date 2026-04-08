@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossHealth : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class BossHealth : MonoBehaviour
 
         if (health <= 0f)
         {
-            Destroy(gameObject);
+            SceneManager.LoadScene("LIZZIE_WIN_SCREEN");
         }
     }
 }
