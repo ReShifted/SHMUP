@@ -77,7 +77,7 @@ public class snakecontroller : MonoBehaviour
         int index = 0;
         foreach (var bodypart in bodyparts)
         {
-            int posIndex = Mathf.Min(index * gap, previousPositions.Count - 1);
+            int posIndex = Mathf.Min((index + 1) * gap, previousPositions.Count - 1);
             bodypart.transform.position = previousPositions[posIndex]; // follow head
             bodypart.transform.rotation = previousRotations[posIndex];
             index++;
