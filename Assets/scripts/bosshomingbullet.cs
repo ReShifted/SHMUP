@@ -30,7 +30,7 @@ public class bosshomingbullet : MonoBehaviour
         }
 
         Invoke(nameof(EnableHoming), 1f);
-        Invoke(nameof(DestroySelf), 2f);
+        Invoke(nameof(DestroySelf), 4f);
     }
     void DestroySelf()
     {

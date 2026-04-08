@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   soundmanager: {fileID: 5858843317512567601, guid: 8cfcd17cc7d7bd844a4edf28a31ee744, type: 3}
-  speed: 15
+  speed: 5
   player2: {fileID: 6297272116414861723, guid: 228b9bf780f980845ac5d4e0b39bb4a6, type: 3}
   homingStrength: 0.8
   boss: {fileID: 9155558656678669358}
