@@ -16,6 +16,7 @@ public class followplayer : MonoBehaviour
 
     void Update()
     {
+        
         float normalized = Mathf.Clamp(player.position.y / 6.1f, -1f, 1f);
 
         float rotationX = -normalized * maxRotationX;

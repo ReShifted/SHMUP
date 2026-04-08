@@ -13,9 +13,9 @@ public class justinEyeBullet : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Timemanager = FindFirstObjectByType<TimeManager>();
 
-        rb.linearVelocity = new Vector3(-speed, 0, 0);
+        rb.linearVelocity = new Vector3(-speed, 0, 0); // set initial bullet movement
 
-        Invoke(nameof(DestroySelf), 2f);
+        Invoke(nameof(DestroySelf), 2f); // destroy bullet after 2 seconds
     }
 
     private void DestroySelf()
@@ -23,61 +23,37 @@ public class justinEyeBullet : MonoBehaviour
         Destroy(gameObject);
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (other.CompareTag("PARRYIT") && this.CompareTag("EnemyBullet"))
-    //    {
-
-    //        rb.linearVelocity = -rb.linearVelocity * 2f;
-    //        this.tag = "PlayerBullet";
-    //        transform.Rotate(0f, 0f, 180f);
-
-    //        soundmanager.instance.PlayParrySound(parrySound, transform);
-    //        Timemanager.DoSlowmotion();
-
-    //        CancelInvoke(nameof(DestroySelf));
-    //        Invoke(nameof(DestroySelf), 8f);
-    //    }
-    //    else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
-    //    {
-    //        rb.linearVelocity *= 2f;
-    //        soundmanager.instance.PlayParrySound(parrySound, transform);
-    //    }
-
-    //    if (other.CompareTag("Player"))
-    //    {
-    //        Destroy(gameObject);
-    //    }
-    //}
     private void OnTriggerEnter(Collider other)
     {
+        // If enemy bullet is parried by player
         if (other.CompareTag("PARRYIT") && this.CompareTag("EnemyBullet"))
         {
             int playerBulletLayer = LayerMask.NameToLayer("PlayerBullet");
             gameObject.layer = playerBulletLayer;
             this.tag = "PlayerBullet";
-            transform.Rotate(0f, 0f, 180f);
+            transform.Rotate(0f, 0f, 180f); // flip bullet direction
 
             CancelInvoke(nameof(DestroySelf));
-            Invoke(nameof(DestroySelf), destroyTime);
+            Invoke(nameof(DestroySelf), destroyTime); // extend bullet life after parry
 
-            rb.linearVelocity = -rb.linearVelocity * 2f;
+            rb.linearVelocity = -rb.linearVelocity * 2f; // reverse and speed up
 
-            Timemanager.DoSlowmotion();
-            soundmanager.instance.PlayParrySound(parrySound, transform);
+            Timemanager.DoSlowmotion(); // trigger slow motion
+            soundmanager.instance.PlayParrySound(parrySound, transform); // play parry sound
         }
+        // If player bullet is parried
         else if (other.CompareTag("PARRYIT") && this.CompareTag("PlayerBullet"))
         {
-            rb.linearVelocity *= 2f;
+            rb.linearVelocity *= 2f; // speed up bullet
             soundmanager.instance.PlayParrySound(parrySound, transform);
         }
+        // Destroy bullet on hitting player or enemy
         if (other.transform.root.CompareTag("Player") && this.CompareTag("EnemyBullet"))
         {
             Destroy(gameObject);
         }
         else if (other.transform.root.CompareTag("Enemy") && this.CompareTag("PlayerBullet"))
         {
-
             Destroy(gameObject);
         }
     }

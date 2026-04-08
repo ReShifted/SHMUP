@@ -12,7 +12,7 @@ public class BossPartDamage : MonoBehaviour
         boss = transform.parent.GetComponent<BossHealth>();
         indicator = transform.parent.GetComponent<EnemyDamageIndicator>();
     }
-
+    // Detect collision with player bullets
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PlayerBullet") && Time.time > lastHitTime + hitCooldown)
