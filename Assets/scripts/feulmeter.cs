@@ -29,7 +29,7 @@ public class feulmeter : MonoBehaviour
         feulrange = Mathf.Clamp01(feul / 100f);
         transform.localScale = new Vector3(feulrange, transform.localScale.y, transform.localScale.z);
     }
-
+    //decrease fuel by 1 every second 
     public void feuldown()
     {
         if (Time.time >= currenttime + timer && feul > 0)

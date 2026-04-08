@@ -16,7 +16,7 @@ public class playermovement : MonoBehaviour
     void FixedUpdate()
     {
         float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? slowedSpeed : baseSpeed;
-
+        // all inputs
         float inputUpward = (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) ? 1f : 0f;
         float inputDownward = (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) ? 1f : 0f;
         float inputLeftward = (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) ? 1f : 0f;
