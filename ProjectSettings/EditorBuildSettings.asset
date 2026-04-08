@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main scene.unity
     guid: 4c524dc52a2fb8140b9aa7d112b650a1
   - enabled: 1
-    path: Assets/Scenes/Startscene (W.I.P).unity
+    path: Assets/Scenes/Startscene.unity
     guid: f010d3689878b444eaac78566b3fd20b
   - enabled: 1
     path: Assets/Scenes/maintestbuild.unity
