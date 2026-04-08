@@ -138,7 +138,7 @@ MonoBehaviour:
   moveDuration: 3
   resumeTime: 7
   speed: 3
-  health: 170
+  health: 100
   Feulmeter: {fileID: 0}
   bulleteye: {fileID: 7141730799202875986, guid: 03fbb7655cbe0284c8c00d059ac21921, type: 3}
   projectilespeed: 35
