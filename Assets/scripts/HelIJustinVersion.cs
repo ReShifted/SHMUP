@@ -9,7 +9,7 @@ public class HelIJustinVersion : MonoBehaviour
 
     public float health = 100f;
 
-    private float[] angles = { 10f, 5f, 0f, -5f, -10f };
+    private float[] angles = {  5f, 0f, -5f };
     private float lastFireTime = 0f;
     public feulmeter Feulmeter;
     public GameObject bulletheli;

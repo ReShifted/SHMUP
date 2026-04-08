@@ -19,15 +19,18 @@ public class snakecontroller : MonoBehaviour
     private float steerTimer;
     private float currentTurn;
     private Vector3 centerPosition;
+    private float fixedZ = -14.64f;
 
     void Start()
     {
-        centerPosition = new Vector3(transform.position.x, transform.position.y, 0f);
+        transform.position = new Vector3(transform.position.x, transform.position.y, fixedZ);
+        centerPosition = new Vector3(transform.position.x, transform.position.y, fixedZ);
 
         for (int i = 0; i < 7; i++)
             SnakesBody();
 
         GameObject tail = Instantiate(tailEnd, transform.position, transform.rotation);
+        tail.transform.parent = transform;
         bodyparts.Add(tail);
 
         currentTurn = Random.Range(-0.3f, 0.3f);
@@ -49,7 +52,7 @@ public class snakecontroller : MonoBehaviour
         direction = new Vector3(direction.x * 1.5f, direction.y * 0.5f, 0f).normalized;
 
         Vector3 newPosition = transform.position + direction * SnakeSpeed * Time.deltaTime;
-        newPosition.z = 0f;
+        newPosition.z = fixedZ;
 
         Vector3 offset = newPosition - centerPosition;
         offset.z = 0f;
@@ -57,7 +60,7 @@ public class snakecontroller : MonoBehaviour
         if (offset.magnitude > radius)
         {
             offset = offset.normalized * radius;
-            newPosition = new Vector3(centerPosition.x + offset.x, centerPosition.y + offset.y, 0f);
+            newPosition = new Vector3(centerPosition.x + offset.x, centerPosition.y + offset.y, fixedZ);
 
             Vector3 directionToCenter = (centerPosition - transform.position).normalized;
             float angle = Mathf.Atan2(directionToCenter.y, directionToCenter.x) * Mathf.Rad2Deg - 90f;
@@ -88,6 +91,7 @@ public class snakecontroller : MonoBehaviour
     private void SnakesBody()
     {
         GameObject newBodyPart = Instantiate(snakebody, transform.position, transform.rotation);
+        newBodyPart.transform.parent = transform;
         bodyparts.Add(newBodyPart);
     }
 }
