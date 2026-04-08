@@ -37,7 +37,7 @@ public class bossbullet : MonoBehaviour
                 transform.Rotate(0f, 0f, 180f);
 
                 CancelInvoke();
-                Invoke(nameof(DestroySelf), 2f);
+                Invoke(nameof(DestroySelf), 1f);
 
                 if (timeManager != null)
                     timeManager.DoSlowmotion();

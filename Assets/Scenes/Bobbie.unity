@@ -2205,7 +2205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b459d8e1e1534448148cd68f4a8466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHealth
-  health: 900
+  health: 500
 --- !u!65 &227184312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5736,7 +5736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b459d8e1e1534448148cd68f4a8466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHealth
-  health: 900
+  health: 500
 --- !u!65 &541457152
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10238,7 +10238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b459d8e1e1534448148cd68f4a8466, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHealth
-  health: 900
+  health: 500
 --- !u!65 &884592442
 BoxCollider:
   m_ObjectHideFlags: 0
